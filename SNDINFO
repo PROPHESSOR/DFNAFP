@@ -1,0 +1,611 @@
+BACKAMBIENCE	AMBIEN01
+
+$random Breathing	{ Breathing1 Breathing2 Breathing3 Breathing4 }
+Breathing1  BREATH01
+Breathing2  BREATH02
+Breathing3  BREATH03
+Breathing4  BREATH04
+
+$limit Breathing 0
+$rolloff Breathing 160 512
+$volume Breathing 2.0
+
+ScareTone SCARE
+$rolloff ScareTone 2048 2048
+$volume ScareTone 2.0
+
+LargeScream		LSCREAM
+//$limit LargeScream 1
+$rolloff LargeScream 512 518
+$volume LargeScream 1.0
+
+GoldenFreddyScream		GFSCREAM
+//$limit LargeScream 1
+$rolloff GoldenFreddyScream 512 518
+$volume GoldenFreddyScream 2.0
+
+$random Laugh	{ Laugh1 Laugh2 Laugh3 }
+Laugh1  LAUGH01
+Laugh2	LAUGH02
+Laugh3	LAUGH03
+
+$limit Laugh 0
+$rolloff Laugh 256 1024
+$volume Laugh 1.5
+
+$random pstepm			{pstep06 pstep07 pstep08 pstep09 pstep00}
+pstep06				pstep6
+pstep07				pstep7
+pstep08				pstep8
+pstep09				pstep9
+pstep00				pstep0
+
+$limit pstepm 0
+$volume pstepm 1.5
+$rolloff pstepm 128 2048
+
+$random pstep			{pstep01 pstep02 pstep03 pstep04 pstep05}
+pstep01				pstep1
+pstep02				pstep2
+pstep03				pstep3
+pstep04				pstep4
+pstep05				pstep5
+
+$limit pstep 0
+$volume pstep 2.5
+$rolloff pstep 128 4096
+
+GeneratorLoop		GENLOOP
+GeneratorStart		GENSTART
+GeneratorStop		GENSTOP
+
+$volume GeneratorLoop 0.5
+$rolloff GeneratorLoop 128 1024
+$volume GeneratorStart 1.0
+$rolloff GeneratorStart 256 4096
+$volume GeneratorStop 0.5
+$rolloff GeneratorStop 128 1024
+
+PowerOff		powrdown
+
+$volume PowerOff 4.0
+
+FreddyJingle		FREDJING
+
+$volume FreddyJingle 3.0
+$rolloff FreddyJingle 256 4096
+
+$random FreddyJump	{ FreddyJump1 FreddyJump2 }
+FreddyJump1  FREDJMP1
+FreddyJump2  FREDJMP2
+
+$limit FreddyJump 0
+$rolloff FreddyJump 128 128
+$volume FreddyJump 4.0
+
+/*$random FreddyJump2	{ FreddyJump1 FreddyJump2 }
+
+$limit FreddyJump2 0
+$rolloff FreddyJump2 256 1024
+$volume FreddyJump2 4.0
+*/
+6AM		6AM
+
+CHEER		CHEER
+
+$random playstep			{playstep01 playstep02 playstep03 playstep04 playstep05 playstep06 playstep07 playstep08 playstep09 }
+playstep01				step01
+playstep02				step02
+playstep03				step03
+playstep04				step04
+playstep05				step05
+playstep06				step06
+playstep07				step07
+playstep08				step08
+playstep09				step09
+
+$limit playstep 0
+$volume paystep 0.5
+$rolloff playstep 64 256
+
+zoeydie01		zoeydie1
+zoeydie02		zoeydie2
+zoeydie03		zoeydie3
+$random zoeydeath			{zoeydie01 zoeydie02  zoeydie03}
+
+zoeygrunt01		ZOEY1
+zoeygrunt02		ZOEY2
+$random zoeygrunt		{zoeygrunt01 zoeygrunt02 }
+
+$playeralias	"zoeysounds"	male	*death		zoeydeath
+$playeralias	"zoeysounds"	male	*xdeath		zoeydeath
+$playeralias	"zoeysounds"	male	*gibbed		zoeydeath
+$playersound	"zoeysounds"	male	*pain100	dsempty
+$playersound	"zoeysounds"	male	*pain75		dsempty
+$playersound	"zoeysounds"	male	*pain50		dsempty
+$playersound	"zoeysounds"	male	*pain25		dsempty
+$playersound	"zoeysounds"	male	*weaponlaugh	dsempty
+$playersound	"zoeysounds"	male	*evillaugh	dsempty
+$playeralias	"zoeysounds"	male	*grunt		zoeygrunt
+$playeralias	"zoeysounds"	male	*usefail	zoeygrunt
+$playeralias	"zoeysounds"	male	*land		zoeygrunt
+$playersound	"zoeysounds"	male	*jump		dsempty
+
+$playeralias	"zoeysounds"	female	*death		zoeydeath
+$playeralias	"zoeysounds"	female	*xdeath		zoeydeath
+$playeralias	"zoeysounds"	female	*gibbed		zoeydeath
+$playersound	"zoeysounds"	female	*pain100	dsempty
+$playersound	"zoeysounds"	female	*pain75		dsempty
+$playersound	"zoeysounds"	female	*pain50		dsempty
+$playersound	"zoeysounds"	female	*pain25		dsempty
+$playersound	"zoeysounds"	female	*weaponlaugh	dsempty
+$playersound	"zoeysounds"	female	*evillaugh	dsempty
+$playeralias	"zoeysounds"	female	*grunt		zoeygrunt
+$playeralias	"zoeysounds"	female	*usefail	zoeygrunt
+$playeralias	"zoeysounds"	female	*land		zoeygrunt
+$playersound	"zoeysounds"	female	*jump		dsempty
+
+$playeralias	"zoeysounds"	other	*death		zoeydeath
+$playeralias	"zoeysounds"	other	*xdeath		zoeydeath
+$playeralias	"zoeysounds"	other	*gibbed		zoeydeath
+$playersound	"zoeysounds"	other	*pain100	dsempty
+$playersound	"zoeysounds"	other	*pain75		dsempty
+$playersound	"zoeysounds"	other	*pain50		dsempty
+$playersound	"zoeysounds"	other	*pain25		dsempty
+$playersound	"zoeysounds"	other	*weaponlaugh	dsempty
+$playersound	"zoeysounds"	other	*evillaugh	dsempty
+$playeralias	"zoeysounds"	other	*grunt		zoeygrunt
+$playeralias	"zoeysounds"	other	*usefail	zoeygrunt
+$playeralias	"zoeysounds"	other	*land		zoeygrunt
+$playersound	"zoeysounds"	other	*jump		dsempty
+
+elisdie01		elisdie1
+elisdie02		elisdie2
+elisdie03		elisdie3
+$random elisdeath			{elisdie01 elisdie02  elisdie03}
+
+elisgrunt01		elis1
+elisgrunt02		elis2
+$random elisgrunt		{elisgrunt01 elisgrunt02 }
+
+$playeralias	"elissounds"	male	*death		elisdeath
+$playeralias	"elissounds"	male	*xdeath		elisdeath
+$playeralias	"elissounds"	male	*gibbed		elisdeath
+$playersound	"elissounds"	male	*pain100	dsempty
+$playersound	"elissounds"	male	*pain75		dsempty
+$playersound	"elissounds"	male	*pain50		dsempty
+$playersound	"elissounds"	male	*pain25		dsempty
+$playersound	"elissounds"	male	*weaponlaugh	dsempty
+$playersound	"elissounds"	male	*evillaugh	dsempty
+$playeralias	"elissounds"	male	*grunt		elisgrunt
+$playeralias	"elissounds"	male	*usefail	elisgrunt
+$playeralias	"elissounds"	male	*land		elisgrunt
+$playersound	"elissounds"	male	*jump		dsempty
+
+$playeralias	"elissounds"	female	*death		elisdeath
+$playeralias	"elissounds"	female	*xdeath		elisdeath
+$playeralias	"elissounds"	female	*gibbed		elisdeath
+$playersound	"elissounds"	female	*pain100	dsempty
+$playersound	"elissounds"	female	*pain75		dsempty
+$playersound	"elissounds"	female	*pain50		dsempty
+$playersound	"elissounds"	female	*pain25		dsempty
+$playersound	"elissounds"	female	*weaponlaugh	dsempty
+$playersound	"elissounds"	female	*evillaugh	dsempty
+$playeralias	"elissounds"	female	*grunt		elisgrunt
+$playeralias	"elissounds"	female	*usefail	elisgrunt
+$playeralias	"elissounds"	female	*land		elisgrunt
+$playersound	"elissounds"	female	*jump		dsempty
+
+$playeralias	"elissounds"	other	*death		elisdeath
+$playeralias	"elissounds"	other	*xdeath		elisdeath
+$playeralias	"elissounds"	other	*gibbed		elisdeath
+$playersound	"elissounds"	other	*pain100	dsempty
+$playersound	"elissounds"	other	*pain75		dsempty
+$playersound	"elissounds"	other	*pain50		dsempty
+$playersound	"elissounds"	other	*pain25		dsempty
+$playersound	"elissounds"	other	*weaponlaugh	dsempty
+$playersound	"elissounds"	other	*evillaugh	dsempty
+$playeralias	"elissounds"	other	*grunt		elisgrunt
+$playeralias	"elissounds"	other	*usefail	elisgrunt
+$playeralias	"elissounds"	other	*land		elisgrunt
+$playersound	"elissounds"	other	*jump		dsempty
+
+luisdie01		luisdie1
+luisdie02		luisdie2
+luisdie03		luisdie3
+$random luisdeath			{luisdie01 luisdie02  luisdie03}
+
+luisgrunt01		luis1
+luisgrunt02		luis2
+$random luisgrunt		{luisgrunt01 luisgrunt02 }
+
+$playeralias	"luissounds"	male	*death		luisdeath
+$playeralias	"luissounds"	male	*xdeath		luisdeath
+$playeralias	"luissounds"	male	*gibbed		luisdeath
+$playersound	"luissounds"	male	*pain100	dsempty
+$playersound	"luissounds"	male	*pain75		dsempty
+$playersound	"luissounds"	male	*pain50		dsempty
+$playersound	"luissounds"	male	*pain25		dsempty
+$playersound	"luissounds"	male	*weaponlaugh	dsempty
+$playersound	"luissounds"	male	*evillaugh	dsempty
+$playeralias	"luissounds"	male	*grunt		luisgrunt
+$playeralias	"luissounds"	male	*usefail	luisgrunt
+$playeralias	"luissounds"	male	*land		luisgrunt
+$playersound	"luissounds"	male	*jump		dsempty
+
+$playeralias	"luissounds"	female	*death		luisdeath
+$playeralias	"luissounds"	female	*xdeath		luisdeath
+$playeralias	"luissounds"	female	*gibbed		luisdeath
+$playersound	"luissounds"	female	*pain100	dsempty
+$playersound	"luissounds"	female	*pain75		dsempty
+$playersound	"luissounds"	female	*pain50		dsempty
+$playersound	"luissounds"	female	*pain25		dsempty
+$playersound	"luissounds"	female	*weaponlaugh	dsempty
+$playersound	"luissounds"	female	*evillaugh	dsempty
+$playeralias	"luissounds"	female	*grunt		luisgrunt
+$playeralias	"luissounds"	female	*usefail	luisgrunt
+$playeralias	"luissounds"	female	*land		luisgrunt
+$playersound	"luissounds"	female	*jump		dsempty
+
+$playeralias	"luissounds"	other	*death		luisdeath
+$playeralias	"luissounds"	other	*xdeath		luisdeath
+$playeralias	"luissounds"	other	*gibbed		luisdeath
+$playersound	"luissounds"	other	*pain100	dsempty
+$playersound	"luissounds"	other	*pain75		dsempty
+$playersound	"luissounds"	other	*pain50		dsempty
+$playersound	"luissounds"	other	*pain25		dsempty
+$playersound	"luissounds"	other	*weaponlaugh	dsempty
+$playersound	"luissounds"	other	*evillaugh	dsempty
+$playeralias	"luissounds"	other	*grunt		luisgrunt
+$playeralias	"luissounds"	other	*usefail	luisgrunt
+$playeralias	"luissounds"	other	*land		luisgrunt
+$playersound	"luissounds"	other	*jump		dsempty
+
+frandie01		frandie1
+frandie02		frandie2
+frandie03		frandie3
+$random frandeath			{frandie01 frandie02  frandie03}
+
+frangrunt01		fran1
+frangrunt02		fran2
+$random frangrunt		{frangrunt01 frangrunt02 }
+
+$playeralias	"fransounds"	male	*death		frandeath
+$playeralias	"fransounds"	male	*xdeath		frandeath
+$playeralias	"fransounds"	male	*gibbed		frandeath
+$playersound	"fransounds"	male	*pain100	dsempty
+$playersound	"fransounds"	male	*pain75		dsempty
+$playersound	"fransounds"	male	*pain50		dsempty
+$playersound	"fransounds"	male	*pain25		dsempty
+$playersound	"fransounds"	male	*weaponlaugh	dsempty
+$playersound	"fransounds"	male	*evillaugh	dsempty
+$playeralias	"fransounds"	male	*grunt		frangrunt
+$playeralias	"fransounds"	male	*usefail	frangrunt
+$playeralias	"fransounds"	male	*land		frangrunt
+$playersound	"fransounds"	male	*jump		dsempty
+
+$playeralias	"fransounds"	female	*death		frandeath
+$playeralias	"fransounds"	female	*xdeath		frandeath
+$playeralias	"fransounds"	female	*gibbed		frandeath
+$playersound	"fransounds"	female	*pain100	dsempty
+$playersound	"fransounds"	female	*pain75		dsempty
+$playersound	"fransounds"	female	*pain50		dsempty
+$playersound	"fransounds"	female	*pain25		dsempty
+$playersound	"fransounds"	female	*weaponlaugh	dsempty
+$playersound	"fransounds"	female	*evillaugh	dsempty
+$playeralias	"fransounds"	female	*grunt		frangrunt
+$playeralias	"fransounds"	female	*usefail	frangrunt
+$playeralias	"fransounds"	female	*land		frangrunt
+$playersound	"fransounds"	female	*jump		dsempty
+
+$playeralias	"fransounds"	other	*death		frandeath
+$playeralias	"fransounds"	other	*xdeath		frandeath
+$playeralias	"fransounds"	other	*gibbed		frandeath
+$playersound	"fransounds"	other	*pain100	dsempty
+$playersound	"fransounds"	other	*pain75		dsempty
+$playersound	"fransounds"	other	*pain50		dsempty
+$playersound	"fransounds"	other	*pain25		dsempty
+$playersound	"fransounds"	other	*weaponlaugh	dsempty
+$playersound	"fransounds"	other	*evillaugh	dsempty
+$playeralias	"fransounds"	other	*grunt		frangrunt
+$playeralias	"fransounds"	other	*usefail	frangrunt
+$playeralias	"fransounds"	other	*land		frangrunt
+$playersound	"fransounds"	other	*jump		dsempty
+
+zoeymove01		zomove01
+zoeymove02		zomove02
+zoeymove03		zomove03
+zoeymove04		zomove04
+zoeymove05		zomove05
+zoeymove06		zomove06
+zoeymove07		zomove07
+zoeymove08		zomove08
+zoeymove09		zomove09
+zoeymove10		zomove10
+zoeymove11		zomove11
+$random ZoeyMoveOn			{zoeymove01 zoeymove02 zoeymove03 zoeymove04 zoeymove05 
+ zoeymove06 zoeymove07 zoeymove08 zoeymove09 zoeymove10 zoeymove11}
+$rolloff ZoeyMoveOn 128 1280
+
+zoeyfollow01		zofoll01
+zoeyfollow02		zofoll02
+zoeyfollow03		zofoll03
+zoeyfollow04		zofoll04
+zoeyfollow05		zofoll05
+zoeyfollow06		zofoll06
+zoeyfollow07		zofoll07
+zoeyfollow08		zofoll08
+zoeyfollow09		zofoll09
+zoeyfollow10		zofoll10
+zoeyfollow11		zofoll11
+$random ZoeyFollowMe			{zoeyfollow01 zoeyfollow02 zoeyfollow03 zoeyfollow04 zoeyfollow05 
+ zoeyfollow06 zoeyfollow07 zoeyfollow08 zoeyfollow09 zoeyfollow10 zoeyfollow11}
+$rolloff ZoeyFollowMe 128 1280
+
+zoeylight01		zoliht01
+zoeylight02		zoliht02
+zoeylight03		zoliht03
+zoeylight04		zoliht04
+zoeylight05		zoliht05
+zoeylight06		zoliht06
+zoeylight07		zoliht07
+zoeylight08		zoliht08
+zoeylight09		zoliht09
+zoeylight10		zoliht10
+zoeylight11		zoliht11
+$random ZoeyLights			{zoeylight01 zoeylight02 zoeylight03 zoeylight04 zoeylight05 
+ zoeylight06 zoeylight07 zoeylight08 zoeylight09 zoeylight10 zoeylight11}
+$rolloff ZoeyLights 128 768
+
+zoeycareful01		zocarf01
+zoeycareful02		zocarf02
+zoeycareful03		zocarf03
+zoeycareful04		zocarf04
+zoeycareful05		zocarf05
+zoeycareful06		zocarf06
+zoeycareful07		zocarf07
+$random ZoeyCareful			{zoeycareful01 zoeycareful02 zoeycareful03 zoeycareful04 zoeycareful05 
+ zoeycareful06 zoeycareful07}
+$rolloff ZoeyCareful 128 896
+
+zoeybiggasp01		zobgsp01
+zoeybiggasp02		zobgsp02
+zoeybiggasp03		zobgsp03
+zoeybiggasp04		zobgsp04
+$random ZoeyBigGasp			{zoeybiggasp01 zoeybiggasp02 zoeybiggasp03 zoeybiggasp04}
+$rolloff ZoeyBigGasp 64 256
+$volume ZoeyBigGasp 0.3
+
+zoeymediumgasp01		zosgsp01
+zoeymediumgasp02		zosgsp02
+$random ZoeyMediumGasp			{zoeymediumgasp01 zoeymediumgasp02}
+$rolloff ZoeyMediumGasp 64 192
+$volume ZoeyMediumGasp 0.2
+
+zoeysmallgasp01		zogasp01
+zoeysmallgasp02		zogasp02
+$random ZoeySmallGasp			{zoeysmallgasp01 zoeysmallgasp02}
+$rolloff ZoeySmallGasp 64 128
+$volume ZoeySmallGasp 0.1
+
+ellismove01		elmove01
+ellismove02		elmove02
+ellismove03		elmove03
+ellismove04		elmove04
+ellismove05		elmove05
+ellismove06		elmove06
+ellismove07		elmove07
+$random EllisMoveOn			{ellismove01 ellismove02 ellismove03 ellismove04 ellismove05 
+ ellismove06 ellismove07}
+$rolloff EllisMoveOn 128 1280
+
+ellisfollow01		elfoll01
+ellisfollow02		elfoll02
+ellisfollow03		elfoll03
+ellisfollow04		elfoll04
+$random EllisFollowMe			{ellisfollow01 ellisfollow02 ellisfollow03 ellisfollow04}
+$rolloff EllisFollowMe 128 1280
+
+ellislight01		elliht01
+ellislight02		elliht02
+ellislight03		elliht03
+ellislight04		elliht04
+$random EllisLights			{ellislight01 ellislight02 ellislight03 ellislight04}
+$rolloff EllisLights 128 768
+
+elliscareful01		elcarf01
+elliscareful02		elcarf02
+elliscareful03		elcarf03
+elliscareful04		elcarf04
+elliscareful05		elcarf05
+$random EllisCareful			{elliscareful01 elliscareful02 elliscareful03 elliscareful04 elliscareful05}
+$rolloff EllisCareful 128 896
+
+louismove01		lumove01
+louismove02		lumove02
+louismove03		lumove03
+louismove04		lumove04
+louismove05		lumove05
+louismove06		lumove06
+louismove07		lumove07
+louismove08		lumove08
+$random LouisMoveOn			{louismove01 louismove02 louismove03 louismove04 louismove05 
+ louismove06 louismove07 louismove08}
+$rolloff LouisMoveOn 128 1280
+
+louisfollow01		lufoll01
+louisfollow02		lufoll02
+louisfollow03		lufoll03
+louisfollow04		lufoll04
+louisfollow05		lufoll05
+$random LouisFollowMe			{louisfollow01 louisfollow02 louisfollow03 louisfollow04 louisfollow05}
+$rolloff LouisFollowMe 128 1280
+
+louislight01		luliht01
+louislight02		luliht02
+louislight03		luliht03
+louislight04		luliht04
+louislight05		luliht05
+$random LouisLights			{louislight01 louislight02 louislight03 louislight04 louislight05}
+$rolloff LouisLights 128 768
+
+louiscareful01		lucarf01
+louiscareful02		lucarf02
+louiscareful03		lucarf03
+louiscareful04		lucarf04
+louiscareful05		lucarf05
+louiscareful06		lucarf06
+louiscareful07		lucarf07
+louiscareful08		lucarf08
+louiscareful09		lucarf09
+louiscareful10		lucarf10
+louiscareful11		lucarf11
+$random LouisCareful			{louiscareful01 louiscareful02 louiscareful03 louiscareful04 louiscareful05 
+ louiscareful06 louiscareful07 louiscareful08 louiscareful09 louiscareful10 louiscareful11}
+$rolloff LouisCareful 128 896
+
+louisbiggasp01		lubgsp01
+louisbiggasp02		lubgsp02
+louisbiggasp03		lubgsp03
+$random LouisBigGasp			{louisbiggasp01 louisbiggasp02 louisbiggasp03}
+$rolloff LouisBigGasp 64 256
+$volume LouisBigGasp 0.3
+
+louismediumgasp01		lusgsp01
+louismediumgasp02		lusgsp02
+$random LouisMediumGasp			{louismediumgasp01 louismediumgasp02}
+$rolloff LouisMediumGasp 64 192
+$volume LouisMediumGasp 0.2
+
+louissmallgasp01		lugasp01
+louissmallgasp02		lugasp02
+louissmallgasp03		lugasp03
+$random LouisSmallGasp			{louissmallgasp01 louissmallgasp02 louissmallgasp03}
+$rolloff LouisSmallGasp 64 128
+$volume LouisSmallGasp 0.1
+
+francismove01		frmove01
+francismove02		frmove02
+francismove03		frmove03
+francismove04		frmove04
+francismove05		frmove05
+francismove06		frmove06
+francismove07		frmove07
+francismove08		frmove08
+francismove09		frmove09
+francismove10		frmove10
+francismove11		frmove11
+$random FrancisMoveOn			{francismove01 francismove02 francismove03 francismove04 francismove05 
+ francismove06 francismove07 francismove08 francismove09 francismove10 francismove11}
+$rolloff FrancisMoveOn 128 1280
+
+francisfollow01		frfoll01
+francisfollow02		frfoll02
+francisfollow03		frfoll03
+francisfollow04		frfoll04
+francisfollow05		frfoll05
+francisfollow06		frfoll06
+francisfollow07		frfoll07
+francisfollow08		frfoll08
+francisfollow09		frfoll09
+$random FrancisFollowMe			{francisfollow01 francisfollow02 francisfollow03 francisfollow04 francisfollow05 
+ francisfollow06 francisfollow07 francisfollow08 francisfollow09}
+$rolloff FrancisFollowMe 128 1280
+
+francislight01		frliht01
+francislight02		frliht02
+francislight03		frliht03
+francislight04		frliht04
+francislight05		frliht05
+francislight06		frliht06
+francislight07		frliht07
+francislight08		frliht08
+francislight09		frliht09
+francislight10		frliht10
+$random FrancisLights			{francislight01 francislight02 francislight03 francislight04 francislight05 
+ francislight06 francislight07 francislight08 francislight09 francislight10}
+$rolloff FrancisLights 128 768
+
+franciscareful01		frcarf01
+franciscareful02		frcarf02
+franciscareful03		frcarf03
+franciscareful04		frcarf04
+franciscareful05		frcarf05
+franciscareful06		frcarf06
+franciscareful07		frcarf07
+franciscareful08		frcarf08
+franciscareful09		frcarf09
+$random FrancisCareful			{franciscareful01 franciscareful02 franciscareful03 franciscareful04 franciscareful05 
+ franciscareful06 franciscareful07 franciscareful08 franciscareful09}
+$rolloff FrancisCareful 128 896
+
+francisbiggasp01		frbgsp01
+francisbiggasp02		frbgsp02
+francisbiggasp03		frbgsp03
+$random FrancisBigGasp			{francisbiggasp01 francisbiggasp02 francisbiggasp03}
+$rolloff FrancisBigGasp 64 256
+$volume FrancisBigGasp 0.3
+
+francismediumgasp01		frsgsp01
+francismediumgasp02		frsgsp02
+$random FrancisMediumGasp			{francismediumgasp01 francismediumgasp02}
+$rolloff FrancisMediumGasp 64 192
+$volume FrancisMediumGasp 0.2
+
+francissmallgasp01		frgasp01
+francissmallgasp02		frgasp02
+francissmallgasp03		frgasp03
+francissmallgasp04		frgasp04
+francissmallgasp05		frgasp05
+$random FrancisSmallGasp			{francissmallgasp01 francissmallgasp02 francissmallgasp03 francissmallgasp04 francissmallgasp05}
+$rolloff FrancisSmallGasp 64 128
+$volume FrancisSmallGasp 0.1
+
+
+RainOutside  RAIN
+RainInside  INRAIN
+OutsideWind  OUTWIND
+InsideWind1 INWIND1
+InsideWind2 INWIND2
+$random InsideWind	{ InsideWind1 InsideWind2 }
+
+$limit InsideWind 0
+$rolloff RainInside 320 768
+$rolloff InsideWind 256 640
+$ambient 1 RainInside Point Continuous 0.8
+$ambient 2 InsideWind Point Random 1.0 3.0 0.8
+$ambient 3 RainOutside surround Continuous 0.15
+$ambient 4 OutsideWind surround Continuous 1.5
+
+RandomAmbience01	RANAMB01
+RandomAmbience02	RANAMB02
+RandomAmbience03	RANAMB03
+RandomAmbience04	RANAMB04
+RandomAmbience05	RANAMB05
+RandomAmbience06	RANAMB06
+RandomAmbience07	RANAMB07
+RandomAmbience08	RANAMB08
+RandomAmbience09	RANAMB09
+RandomAmbience10	RANAMB10
+RandomAmbience11	RANAMB11
+RandomAmbience12	RANAMB12
+RandomAmbience13	RANAMB13
+RandomAmbience14	RANAMB14
+RandomAmbience15	RANAMB15
+RandomAmbience16	RANAMB16
+RandomAmbience17	RANAMB17
+RandomAmbience18	RANAMB18
+RandomAmbience19	RANAMB19
+RandomAmbience20	RANAMB20
+RandomAmbience21	RANAMB21
+RandomAmbience22	RANAMB22
+RandomAmbience23	RANAMB23
+RandomAmbience24	RANAMB24
+RandomAmbience25	RANAMB25
+$random RandomAmienceStuff	{ RandomAmbience01 RandomAmbience02 RandomAmbience03 RandomAmbience04 
+RandomAmbience05 RandomAmbience06 RandomAmbience07 RandomAmbience08 RandomAmbience09 RandomAmbience10 
+RandomAmbience11 RandomAmbience12 RandomAmbience13 RandomAmbience14 RandomAmbience15 RandomAmbience16 
+RandomAmbience17 RandomAmbience18 RandomAmbience19 RandomAmbience20 RandomAmbience21 RandomAmbience22 
+RandomAmbience23 RandomAmbience24 RandomAmbience25}
+
+$ambient 5 RandomAmienceStuff surround Random 35.0 240.0 1.0

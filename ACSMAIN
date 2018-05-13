@@ -1,0 +1,114 @@
+#library "ACSMAIN"
+#include "zcommon.acs"
+
+function str timeconverter(int tick) {
+	//int tmp = tick/35/60;
+	//if(tmp == 0){
+	//	return 12;
+	//}
+	//return tmp;
+	return StrParam(i:tick/35/60, s:"AM");
+}
+
+script 800 ENTER {
+	int time = 0;
+	
+	while(1) {
+		delay(1);
+		if(time >= 126000) time = 0;
+		SetHudSize(640, 400, FALSE);
+		SetFont("smallfont");
+		HudMessage(s:timeconverter(time); HUDMSG_PLAIN, 1, CR_RED, 640.2, 0.1, 0.0);
+		time++;
+	}
+}
+
+Script 801 (void){//06:00 AM
+	//StopSound(0,0);
+	Thing_Stop(0);
+	AmbientSound("sound/clock",127);
+	Setfont("dbigfont");
+	SetHudSize(640, 400, FALSE);
+    Hudmessage(s:"05:00";HUDMSG_FADEOUT, 3, CR_WHITE, 320.4, 190.0, 45.5, 1.0);
+	delay(35*8);
+    Hudmessage(s:"06:00";HUDMSG_FADEOUT, 4, CR_WHITE, 320.4, 190.0, 3.5, 1.0);
+	AmbientSound("sound/childs",127);
+	delay(35*4);
+	//ChangeLevel("FNAF2",0,0);
+	Exit_Normal(0);
+}
+
+script 300 (void) {
+	ChangeCamera(0, 0, 0);
+}
+
+script 301 (void) {
+	ChangeCamera(311, 0, 0);
+}
+
+script 302 (void) {
+	ChangeCamera(312, 0, 0);
+}
+
+script 303 (void) {
+	ChangeCamera(313, 0, 0);
+}
+
+script 304 (void) {
+	ChangeCamera(314, 0, 0);
+}
+
+script 305 (void) {
+	ChangeCamera(315, 0, 0);
+}
+
+script 306 (void) {
+	ChangeCamera(316, 0, 0);
+}
+
+script 307 (void) {
+	ChangeCamera(317, 0, 0);
+}
+
+script 308 (void) {
+	ChangeCamera(318, 0, 0);
+}
+
+script 309 (void) {
+	ChangeCamera(319, 0, 0);
+}
+
+script 310 (void) {
+	ChangeCamera(320, 0, 0);
+}
+
+script 311 (void) {
+	ChangeCamera(321, 0, 0);
+}
+
+script 312 (void) {
+	ChangeCamera(322, 0, 0);
+}
+
+script 876 (void) {
+	if(GetLevelInfo(LEVELINFO_LEVELNUM) == 2) {
+		int tag = ActivatorTID();
+		int t2 = tag;
+		if(t2 == 0) {
+			t2 = UniqueTID();
+			Thing_ChangeTID(0, t2);
+		}
+		if(!CheckSight(668, t2, 0)) {
+			GiveInventory("Mask", 1);
+		}
+	}
+}
+
+
+
+/*script 963 (void) {
+	if(CheckSight(668, ActivatorTID(), 0)) {
+		SetResultValue(1);
+	}
+	SetResultValue(0);
+}*/

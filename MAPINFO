@@ -1,0 +1,109 @@
+//===================
+// Custom Levels
+//===================
+
+ClearEpisodes
+
+Episode FNAF1
+{
+	Name = "Five Night at Freddy's 1"
+	NoSkillMenu
+}
+
+Episode FNAF2
+{
+	Name = "Five Night at Freddy's 2"
+	NoSkillMenu
+}
+
+Episode FNAF3
+{
+	Name = "Five Night at Freddy's 3"
+	NoSkillMenu
+}
+
+Map FNAF1 "Five Night at Freddy's 1"
+{
+	LevelNum = 1
+	Cluster = 1
+	SkyBox = SKY2
+}
+
+Map FNAF2 "Five Night at Freddy's 2"
+{
+	LevelNum = 2
+	Cluster = 2
+	SkyBox = SKY2
+}
+
+Map FNAF3 "Five Night at Freddy's 3"
+{
+	LevelNum = 3
+	Cluster = 3
+	SkyBox = SKY2
+}
+
+//===================
+// Nights
+//===================
+
+CLEARSKILLS
+
+SKILL 1
+{
+AmmoFactor = 2
+DamageFactor = 0.5
+SpawnFilter = Easy
+Name = "Night 1"
+TextColor = Grey
+}
+
+SKILL 2
+{
+AmmoFactor = 1.5
+DamageFactor = 0.75
+SpawnFilter = Normal
+Name = "Night 2"
+TextColor = Red
+}
+
+SKILL 3
+{
+AmmoFactor = 1
+DamageFactor = 1.0
+SpawnFilter = Normal
+Name = "Night 3"
+TextColor = Red
+}
+
+SKILL 4
+{
+AmmoFactor = 1
+DamageFactor = 1.0
+SpawnFilter = Hard
+Name = "Night 4"
+TextColor = Red
+}
+
+SKILL 5
+{
+AmmoFactor = 1
+DamageFactor = 1.5
+DisableCheats
+SpawnFilter = Nightmare
+Name = "Night 5"
+TextColor = DarkRed
+//MustConfirm = "Monsters deal 50% extra damage. Y / N"
+}
+
+SKILL 6
+{
+AmmoFactor = 1
+DamageFactor = 1.5
+DisableCheats
+FastMonsters
+SpawnFilter = Nightmare
+Name = "Night 6"
+TextColor = Black
+//MustConfirm = "Monsters are fast and deal 50% extra damage. This is near impossible, are you sure? Y / N"
+}

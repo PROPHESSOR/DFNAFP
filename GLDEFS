@@ -1,0 +1,19 @@
+brightmap "Models/Monsters/Bonnie/bonnieskin.png"
+{
+  map "bm/bonnieskinBM.png"
+}
+
+brightmap "Models/Monsters/Foxy/foxyskin.png"
+{
+  map "bm/foxyskinBM.png"
+}
+
+brightmap "Models/Monsters/Chica/chicaskin.png"
+{
+  map "bm/chicaskinBM.png"
+}
+
+brightmap "Models/Monsters/Freddy/freddyskin.png"
+{
+  map "bm/freddyskinBM.png"
+}

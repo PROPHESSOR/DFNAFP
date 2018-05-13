@@ -1,0 +1,61 @@
+ADDKEYSECTION "FNAF Keys" FNAF-Keys
+
+ADDMENUKEY "Return" Return
+ADDMENUKEY "Camera 1" Camera1
+ADDMENUKEY "Camera 2" Camera2
+ADDMENUKEY "Camera 3" Camera3
+ADDMENUKEY "Camera 4" Camera4
+ADDMENUKEY "Camera 5" Camera5
+ADDMENUKEY "Camera 6" Camera6
+ADDMENUKEY "Camera 7" Camera7
+ADDMENUKEY "Camera 8" Camera8
+ADDMENUKEY "Camera 9" Camera9
+ADDMENUKEY "Camera 10" Camera9
+ADDMENUKEY "Camera 11" Camera9
+ADDMENUKEY "Mask"      Mask
+
+ALIAS Return	"Puke 300"
+ALIAS Camera1	"Puke 301"
+ALIAS Camera2	"Puke 302"
+ALIAS Camera3	"Puke 303"
+ALIAS Camera4	"Puke 304"
+ALIAS Camera5	"Puke 305"
+ALIAS Camera6	"Puke 306"
+ALIAS Camera7	"Puke 307"
+ALIAS Camera8	"Puke 308"
+ALIAS Camera9	"Puke 309"
+ALIAS Camera10	"Puke 310"
+ALIAS Camera11	"Puke 311"
+ALIAS Camera12	"Puke 312"
+ALIAS Mask "Puke 876"
+
+
+DEFAULTBIND KP0 Return
+DEFAULTBIND KP1 Camera1
+DEFAULTBIND KP2 Camera2
+DEFAULTBIND KP3 Camera3
+DEFAULTBIND KP4 Camera4
+DEFAULTBIND KP5 Camera5
+DEFAULTBIND KP6 Camera6
+DEFAULTBIND KP7 Camera7
+DEFAULTBIND KP8 Camera8
+DEFAULTBIND KP9 Camera9
+DEFAULTBIND KP. Camera10
+DEFAULTBIND KP* Camera11
+DEFAULTBIND KP/ Camera12
+DEFAULTBIND M   Mask
+
+BIND Return Return
+BIND Camera1 Camera1
+BIND Camera2 Camera2
+BIND Camera3 Camera3
+BIND Camera4 Camera4
+BIND Camera5 Camera5
+BIND Camera6 Camera6
+BIND Camera7 Camera7
+BIND Camera8 Camera8
+BIND Camera9 Camera9
+BIND Camera10 Camera10
+BIND Camera11 Camera11
+BIND Camera12 Camera12
+BIND Mask Mask
