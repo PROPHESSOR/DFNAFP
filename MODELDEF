@@ -1,437 +1,387 @@
-Model Bonnie
-
-{ 
-   Path "Models\Monsters\Bonnie"
-   SKIN 0 "bonnieskin.png"
-   MODEL 0 "BonnieIdle.md2"
-   Scale 1.0 1.0 1.0
-   AngleOffset 90
-	Offset 0 0 0
-
-   FrameIndex CYBI A 0 0
-   FrameIndex CYBI B 0 1
-   FrameIndex CYBI C 0 2
-   FrameIndex CYBI D 0 3
-   FrameIndex CYBI E 0 4
-   FrameIndex CYBI F 0 5
-   FrameIndex CYBI G 0 6
-   FrameIndex CYBI H 0 7
-   FrameIndex CYBI I 0 8
-   FrameIndex CYBI J 0 9
-   FrameIndex CYBI K 0 10
-   FrameIndex CYBI L 0 11
-   FrameIndex CYBI M 0 12
-   FrameIndex CYBI N 0 13
-   FrameIndex CYBI O 0 14
-   FrameIndex CYBI P 0 15
-   FrameIndex CYBI Q 0 16
-   FrameIndex CYBI R 0 17
-   FrameIndex CYBI S 0 18
-   FrameIndex CYBI T 0 19
-   FrameIndex CYBI U 0 20
-   FrameIndex CYBI V 0 21
-   FrameIndex CYBI W 0 22
-   FrameIndex CYBI X 0 23
-   FrameIndex CYBI Y 0 24
-   FrameIndex CYBI Z 0 25
-
-   FrameIndex CYBA A 0 26
-   FrameIndex CYBA B 0 27
-   FrameIndex CYBA C 0 28
-   FrameIndex CYBA D 0 29
-
-}
-
-Model Bonnie
-
-{ 
-   Path "Models\Monsters\Bonnie"
-   SKIN 0 "bonnieskin.png"
-   MODEL 0 "BonnieRun.md2"
-   Scale 1.0 1.0 1.0
-   AngleOffset 90
-	Offset 0 0 0
-
-   FrameIndex CYBB A 0 0
-   FrameIndex CYBB B 0 1
-   FrameIndex CYBB C 0 2
-   FrameIndex CYBB D 0 3
-   FrameIndex CYBB E 0 4
-   FrameIndex CYBB F 0 5
-   FrameIndex CYBB G 0 6
-   FrameIndex CYBB H 0 7
-   FrameIndex CYBB I 0 8
-   FrameIndex CYBB J 0 9
-   FrameIndex CYBB K 0 10
-   FrameIndex CYBB L 0 11
-   FrameIndex CYBB M 0 12
-   FrameIndex CYBB N 0 13
-   FrameIndex CYBB O 0 14
-   FrameIndex CYBB P 0 15
-   FrameIndex CYBB Q 0 16
-   FrameIndex CYBB R 0 17
-   FrameIndex CYBB S 0 18
-   FrameIndex CYBB T 0 19
-   FrameIndex CYBB U 0 20
-   FrameIndex CYBB V 0 21
-
-}
-
-Model Chica
-
-{ 
-   Path "Models\Monsters\Chica"
-   SKIN 0 "chicaskin.png"
-   MODEL 0 "ChicaIdle.md2"
-   Scale 1.0 1.0 1.0
-   AngleOffset 90
-	Offset 0 0 0
-
-   FrameIndex CYBI A 0 0
-
-}
-
-Model Chica
-
-{ 
-   Path "Models\Monsters\Chica"
-   SKIN 0 "chicaskin.png"
-   MODEL 0 "ChicaIdle.md2"
-   Scale 1.0 1.0 1.0
-   AngleOffset 180
-	Offset 0 0 0
-
-   FrameIndex CYBI B 0 1
-   FrameIndex CYBI C 0 2
-   FrameIndex CYBI D 0 3
-   FrameIndex CYBI E 0 4
-   FrameIndex CYBI F 0 5
-   FrameIndex CYBI G 0 6
-   FrameIndex CYBI H 0 7
-   FrameIndex CYBI I 0 8
-   FrameIndex CYBI J 0 9
-   FrameIndex CYBI K 0 10
-   FrameIndex CYBI L 0 11
-   FrameIndex CYBI M 0 12
-   FrameIndex CYBI N 0 13
-   FrameIndex CYBI O 0 14
-   FrameIndex CYBI P 0 15
-   FrameIndex CYBI Q 0 16
-   FrameIndex CYBI R 0 17
-   FrameIndex CYBI S 0 18
-   FrameIndex CYBI T 0 19
-   FrameIndex CYBI U 0 20
-   FrameIndex CYBI V 0 21
-   FrameIndex CYBI W 0 22
-   FrameIndex CYBI X 0 23
-   FrameIndex CYBI Y 0 24
-   FrameIndex CYBI Z 0 25
-
-   FrameIndex CYBA A 0 26
-   FrameIndex CYBA B 0 27
-   FrameIndex CYBA C 0 28
-   FrameIndex CYBA D 0 29
-
-}
-
-Model Chica
-
-{ 
-   Path "Models\Monsters\Chica"
-   SKIN 0 "chicaskin.png"
-   MODEL 0 "ChicaRun.md2"
-   Scale 1.0 1.0 1.0
-   AngleOffset 180
-	Offset 0 0 0
-
-   FrameIndex CYBB A 0 0
-   FrameIndex CYBB B 0 1
-   FrameIndex CYBB C 0 2
-   FrameIndex CYBB D 0 3
-   FrameIndex CYBB E 0 4
-   FrameIndex CYBB F 0 5
-   FrameIndex CYBB G 0 6
-   FrameIndex CYBB H 0 7
-   FrameIndex CYBB I 0 8
-   FrameIndex CYBB J 0 9
-   FrameIndex CYBB K 0 10
-   FrameIndex CYBB L 0 11
-   FrameIndex CYBB M 0 12
-   FrameIndex CYBB N 0 13
-   FrameIndex CYBB O 0 14
-   FrameIndex CYBB P 0 15
-   FrameIndex CYBB Q 0 16
-   FrameIndex CYBB R 0 17
-   FrameIndex CYBB S 0 18
-   FrameIndex CYBB T 0 19
-   FrameIndex CYBB U 0 20
-   FrameIndex CYBB V 0 21
-
-}
-
-Model Freddy
-
-{ 
-   Path "Models\Monsters\Freddy"
-   SKIN 0 "freddyskin.png"
-   MODEL 0 "freddyidle.md2"
-   Scale 1.0 1.0 1.0
-   AngleOffset 90
-	Offset 0 0 0
-
-   FrameIndex CYBI A 0 0
-
-}
-
-Model Freddy
-
-{ 
-   Path "Models\Monsters\Freddy"
-   SKIN 0 "freddyskin.png"
-   MODEL 0 "freddytwitch1.md2"
-   Scale 1.0 1.0 1.0
-   AngleOffset 180
-	Offset 0 0 0
-
-   FrameIndex CYBI B 0 1
-   FrameIndex CYBI C 0 2
-   FrameIndex CYBI D 0 3
-   FrameIndex CYBI E 0 4
-   FrameIndex CYBI F 0 5
-   FrameIndex CYBI G 0 6
-   FrameIndex CYBI H 0 7
-   FrameIndex CYBI I 0 8
-   FrameIndex CYBI J 0 9
-   FrameIndex CYBI K 0 10
-   FrameIndex CYBI L 0 11
-   FrameIndex CYBI M 0 12
-   FrameIndex CYBI N 0 13
-   FrameIndex CYBI O 0 14
-
-}
-
-Model Freddy
-
-{ 
-   Path "Models\Monsters\Freddy"
-   SKIN 0 "freddyskin.png"
-   MODEL 0 "freddytwitch2.md2"
-   Scale 1.0 1.0 1.0
-   AngleOffset 90
-	Offset 0 0 0
-
-   FrameIndex CYBA A 0 0
-   FrameIndex CYBA B 0 1
-   FrameIndex CYBA C 0 2
-   FrameIndex CYBA D 0 3
-   FrameIndex CYBA E 0 4
-   FrameIndex CYBA F 0 5
-   FrameIndex CYBA G 0 6
-   FrameIndex CYBA H 0 7
-   FrameIndex CYBA I 0 8
-   FrameIndex CYBA J 0 9
-   FrameIndex CYBA K 0 10
-   FrameIndex CYBA L 0 11
-   FrameIndex CYBA M 0 12
-   FrameIndex CYBA N 0 13
-   FrameIndex CYBA O 0 14
-   FrameIndex CYBA P 0 15
-
-}
-
-Model Freddy
-
-{ 
-   Path "Models\Monsters\Freddy"
-   SKIN 0 "freddyskin.png"
-   MODEL 0 "freddyrun.md2"
-   Scale 1.0 1.0 1.0
-   AngleOffset 90
-	Offset 0 0 0
-
-   FrameIndex CYBB A 0 0
-   FrameIndex CYBB B 0 1
-   FrameIndex CYBB C 0 2
-   FrameIndex CYBB D 0 3
-   FrameIndex CYBB E 0 4
-   FrameIndex CYBB F 0 5
-   FrameIndex CYBB G 0 6
-   FrameIndex CYBB H 0 7
-   FrameIndex CYBB I 0 8
-   FrameIndex CYBB J 0 9
-   FrameIndex CYBB K 0 10
-   FrameIndex CYBB L 0 11
-   FrameIndex CYBB M 0 12
-   FrameIndex CYBB N 0 13
-   FrameIndex CYBB O 0 14
-   FrameIndex CYBB P 0 15
-   FrameIndex CYBB Q 0 16
-   FrameIndex CYBB R 0 17
-   FrameIndex CYBB S 0 18
-   FrameIndex CYBB T 0 19
-   FrameIndex CYBB U 0 20
-   FrameIndex CYBB V 0 21
-
-}
-
-Model Foxy
-
-{ 
-   Path "Models\Monsters\Foxy"
-   SKIN 0 "foxyskin.png"
-   MODEL 0 "FoxyWake.md2"
-   Scale 1.0 1.0 1.0
-   AngleOffset 90
-	Offset 0 0 0
-
-   FrameIndex CYBI A 0 0
-   FrameIndex CYBI B 0 1
-   FrameIndex CYBI C 0 2
-   FrameIndex CYBI D 0 3
-   FrameIndex CYBI E 0 4
-   FrameIndex CYBI F 0 5
-   FrameIndex CYBI G 0 6
-   FrameIndex CYBI H 0 7
-   FrameIndex CYBI I 0 8
-   FrameIndex CYBI J 0 9
-   FrameIndex CYBI K 0 10
-   FrameIndex CYBI L 0 11
-   FrameIndex CYBI M 0 12
-   FrameIndex CYBI N 0 13
-   FrameIndex CYBI O 0 14
-   FrameIndex CYBI P 0 15
-   FrameIndex CYBI Q 0 16
-   FrameIndex CYBI R 0 17
-   FrameIndex CYBI S 0 18
-   FrameIndex CYBI T 0 19
-   FrameIndex CYBI U 0 20
-   FrameIndex CYBI V 0 21
-   FrameIndex CYBI W 0 22
-   FrameIndex CYBI X 0 23
-   FrameIndex CYBI Y 0 24
-   FrameIndex CYBI Z 0 25
-
-   FrameIndex CYBA A 0 26
-   FrameIndex CYBA B 0 27
-   FrameIndex CYBA C 0 28
-   FrameIndex CYBA D 0 29
-   FrameIndex CYBA E 0 30
-   FrameIndex CYBA F 0 31
-
-}
-
-Model Foxy
-
-{ 
-   Path "Models\Monsters\Foxy"
-   SKIN 0 "foxyskin.png"
-   MODEL 0 "FoxyRun.md2"
-   Scale 1.0 1.0 1.0
-   AngleOffset 90
-	Offset 0 0 0
-
-   FrameIndex CYBB A 0 0
-   FrameIndex CYBB B 0 1
-   FrameIndex CYBB C 0 2
-   FrameIndex CYBB D 0 3
-   FrameIndex CYBB E 0 4
-   FrameIndex CYBB F 0 5
-   FrameIndex CYBB G 0 6
-   FrameIndex CYBB H 0 7
-   FrameIndex CYBB I 0 8
-   FrameIndex CYBB J 0 9
-   FrameIndex CYBB K 0 10
-   FrameIndex CYBB L 0 11
-   FrameIndex CYBB M 0 12
-   FrameIndex CYBB N 0 13
-   FrameIndex CYBB O 0 14
-   FrameIndex CYBB P 0 15
-   FrameIndex CYBB Q 0 16
-
-}
-
-Model BonnieHead
-
-{ 
-   Path "Models\Monsters\Bonnie"
-   SKIN 0 "skinpage.pcx"
-   MODEL 0 "B.md2"
-   Scale 2.0 2.0 2.0
-   AngleOffset 90
-	Offset 0 0 0
-
-   FrameIndex CYBI A 0 0
-
-}
-
-/////////////////////////////////
-
-//Model GiantBloodSpot      // Name of actor in DECORATE
-//{
-//   Path "models/bloodspot"    // Path to model in PK3
-//   Model 0 "bloodspot.md3"    // Model index, model file
-//   Skin 0 "bigbloodpool.png"     // Model index, texture (can be in any format supported by GZDoom)
-//   Scale 80.0 80.0 80.0            // Scale values
-//   ZOffset 0.6
-//   FrameIndex BPDL A 0 0         // The sprite lump, sprite frame, model index, frame number
+/* ===== MODELDEFS ===== */
+//Model GiantBloodSpot {          // Name of actor in DECORATE
+//    Path "models/bloodspot"    // Path to model in PK3
+//    Model 0 "bloodspot.md3"    // Model index, model file
+//    Skin 0 "bigbloodpool.png"  // Model index, texture (can be in any format supported by GZDoom)
+//    Scale 80.0 80.0 80.0        // Scale values
+//    ZOffset 0.6
+//    FrameIndex BPDL A 0 0       // The sprite lump, sprite frame, model index, frame number
 //}
 
-Model GoldenFreddy
+Model Bonnie { 
+    Path "models/Monsters/Bonnie"
+    SKIN 0 "bonnieskin.png"
+    MODEL 0 "BonnieIdle.md2"
+    Scale 1.0 1.0 1.0
+    AngleOffset 90
+    Offset 0 0 0
 
-{ 
-   Path "Models\Monsters\GoldenFreddy"
-   SKIN 0 "goldenfreddyskin.png"
-   MODEL 0 "GoldenFreddy.md2"
-   Scale 1.65 1.65 1.65
-   AngleOffset 90
-	Offset 0 0 0
+    FrameIndex CYBI A 0 0
+    FrameIndex CYBI B 0 1
+    FrameIndex CYBI C 0 2
+    FrameIndex CYBI D 0 3
+    FrameIndex CYBI E 0 4
+    FrameIndex CYBI F 0 5
+    FrameIndex CYBI G 0 6
+    FrameIndex CYBI H 0 7
+    FrameIndex CYBI I 0 8
+    FrameIndex CYBI J 0 9
+    FrameIndex CYBI K 0 10
+    FrameIndex CYBI L 0 11
+    FrameIndex CYBI M 0 12
+    FrameIndex CYBI N 0 13
+    FrameIndex CYBI O 0 14
+    FrameIndex CYBI P 0 15
+    FrameIndex CYBI Q 0 16
+    FrameIndex CYBI R 0 17
+    FrameIndex CYBI S 0 18
+    FrameIndex CYBI T 0 19
+    FrameIndex CYBI U 0 20
+    FrameIndex CYBI V 0 21
+    FrameIndex CYBI W 0 22
+    FrameIndex CYBI X 0 23
+    FrameIndex CYBI Y 0 24
+    FrameIndex CYBI Z 0 25
 
-   FrameIndex CYBI A 0 0
-
+    FrameIndex CYBA A 0 26
+    FrameIndex CYBA B 0 27
+    FrameIndex CYBA C 0 28
+    FrameIndex CYBA D 0 29
 }
 
-Model ShadowBonnie
+Model Bonnie { 
+    Path "models/Monsters/Bonnie"
+    SKIN 0 "bonnieskin.png"
+    MODEL 0 "BonnieRun.md2"
+    Scale 1.0 1.0 1.0
+    AngleOffset 90
+    Offset 0 0 0
 
-{ 
-   Path "bm"
-   SKIN 0 "bonnieskinBM.png"
-   Path "Models\Monsters\Bonnie"
-   MODEL 0 "BonnieIdle.md2"
-   Scale 1.0 1.0 1.0
-   AngleOffset 90
-	Offset 0 0 0
-
-   FrameIndex CYBI A 0 0
-
+    FrameIndex CYBB A 0 0
+    FrameIndex CYBB B 0 1
+    FrameIndex CYBB C 0 2
+    FrameIndex CYBB D 0 3
+    FrameIndex CYBB E 0 4
+    FrameIndex CYBB F 0 5
+    FrameIndex CYBB G 0 6
+    FrameIndex CYBB H 0 7
+    FrameIndex CYBB I 0 8
+    FrameIndex CYBB J 0 9
+    FrameIndex CYBB K 0 10
+    FrameIndex CYBB L 0 11
+    FrameIndex CYBB M 0 12
+    FrameIndex CYBB N 0 13
+    FrameIndex CYBB O 0 14
+    FrameIndex CYBB P 0 15
+    FrameIndex CYBB Q 0 16
+    FrameIndex CYBB R 0 17
+    FrameIndex CYBB S 0 18
+    FrameIndex CYBB T 0 19
+    FrameIndex CYBB U 0 20
+    FrameIndex CYBB V 0 21
 }
 
-Model ShadowBonnie
+Model Chica { 
+    Path "models/Monsters/Chica"
+    SKIN 0 "chicaskin.png"
+    MODEL 0 "ChicaIdle.md2"
+    Scale 1.0 1.0 1.0
+    AngleOffset 90
+    Offset 0 0 0
 
-{ 
-   Path "bm"
-   SKIN 0 "bonnieskinBM.png"
-   Path "Models\Monsters\Bonnie"
-   MODEL 0 "BonnieIdle.md2"
-   Scale 1.0 1.0 1.0
-   AngleOffset 90
-	Offset 0 0 0
-
-   FrameIndex CYBI A 0 0
-
+    FrameIndex CYBI A 0 0
 }
 
-Model ShadowFreddy
+Model Chica { 
+    Path "models/Monsters/Chica"
+    SKIN 0 "chicaskin.png"
+    MODEL 0 "ChicaIdle.md2"
+    Scale 1.0 1.0 1.0
+    AngleOffset 180
+    Offset 0 0 0
 
-{ 
-   Path "bm"
-   SKIN 0 "freddyskinBM.png"
-   Path "Models\Monsters\Freddy"
-   MODEL 0 "freddytwitch1.md2"
-   Scale 1.0 1.0 1.0
-   AngleOffset 180
-	Offset 0 0 0
+    FrameIndex CYBI B 0 1
+    FrameIndex CYBI C 0 2
+    FrameIndex CYBI D 0 3
+    FrameIndex CYBI E 0 4
+    FrameIndex CYBI F 0 5
+    FrameIndex CYBI G 0 6
+    FrameIndex CYBI H 0 7
+    FrameIndex CYBI I 0 8
+    FrameIndex CYBI J 0 9
+    FrameIndex CYBI K 0 10
+    FrameIndex CYBI L 0 11
+    FrameIndex CYBI M 0 12
+    FrameIndex CYBI N 0 13
+    FrameIndex CYBI O 0 14
+    FrameIndex CYBI P 0 15
+    FrameIndex CYBI Q 0 16
+    FrameIndex CYBI R 0 17
+    FrameIndex CYBI S 0 18
+    FrameIndex CYBI T 0 19
+    FrameIndex CYBI U 0 20
+    FrameIndex CYBI V 0 21
+    FrameIndex CYBI W 0 22
+    FrameIndex CYBI X 0 23
+    FrameIndex CYBI Y 0 24
+    FrameIndex CYBI Z 0 25
 
-   FrameIndex CYBI A 0 1
+    FrameIndex CYBA A 0 26
+    FrameIndex CYBA B 0 27
+    FrameIndex CYBA C 0 28
+    FrameIndex CYBA D 0 29
+}
 
+Model Chica { 
+    Path "models/Monsters/Chica"
+    SKIN 0 "chicaskin.png"
+    MODEL 0 "ChicaRun.md2"
+    Scale 1.0 1.0 1.0
+    AngleOffset 180
+    Offset 0 0 0
+
+    FrameIndex CYBB A 0 0
+    FrameIndex CYBB B 0 1
+    FrameIndex CYBB C 0 2
+    FrameIndex CYBB D 0 3
+    FrameIndex CYBB E 0 4
+    FrameIndex CYBB F 0 5
+    FrameIndex CYBB G 0 6
+    FrameIndex CYBB H 0 7
+    FrameIndex CYBB I 0 8
+    FrameIndex CYBB J 0 9
+    FrameIndex CYBB K 0 10
+    FrameIndex CYBB L 0 11
+    FrameIndex CYBB M 0 12
+    FrameIndex CYBB N 0 13
+    FrameIndex CYBB O 0 14
+    FrameIndex CYBB P 0 15
+    FrameIndex CYBB Q 0 16
+    FrameIndex CYBB R 0 17
+    FrameIndex CYBB S 0 18
+    FrameIndex CYBB T 0 19
+    FrameIndex CYBB U 0 20
+    FrameIndex CYBB V 0 21
+}
+
+Model Freddy { 
+    Path "models/Monsters/Freddy"
+    SKIN 0 "freddyskin.png"
+    MODEL 0 "freddyidle.md2"
+    Scale 1.0 1.0 1.0
+    AngleOffset 90
+    Offset 0 0 0
+
+    FrameIndex CYBI A 0 0
+}
+
+Model Freddy { 
+    Path "models/Monsters/Freddy"
+    SKIN 0 "freddyskin.png"
+    MODEL 0 "freddytwitch1.md2"
+    Scale 1.0 1.0 1.0
+    AngleOffset 180
+    Offset 0 0 0
+
+    FrameIndex CYBI B 0 1
+    FrameIndex CYBI C 0 2
+    FrameIndex CYBI D 0 3
+    FrameIndex CYBI E 0 4
+    FrameIndex CYBI F 0 5
+    FrameIndex CYBI G 0 6
+    FrameIndex CYBI H 0 7
+    FrameIndex CYBI I 0 8
+    FrameIndex CYBI J 0 9
+    FrameIndex CYBI K 0 10
+    FrameIndex CYBI L 0 11
+    FrameIndex CYBI M 0 12
+    FrameIndex CYBI N 0 13
+    FrameIndex CYBI O 0 14
+}
+
+Model Freddy { 
+    Path "models/Monsters/Freddy"
+    SKIN 0 "freddyskin.png"
+    MODEL 0 "freddytwitch2.md2"
+    Scale 1.0 1.0 1.0
+    AngleOffset 90
+    Offset 0 0 0
+
+    FrameIndex CYBA A 0 0
+    FrameIndex CYBA B 0 1
+    FrameIndex CYBA C 0 2
+    FrameIndex CYBA D 0 3
+    FrameIndex CYBA E 0 4
+    FrameIndex CYBA F 0 5
+    FrameIndex CYBA G 0 6
+    FrameIndex CYBA H 0 7
+    FrameIndex CYBA I 0 8
+    FrameIndex CYBA J 0 9
+    FrameIndex CYBA K 0 10
+    FrameIndex CYBA L 0 11
+    FrameIndex CYBA M 0 12
+    FrameIndex CYBA N 0 13
+    FrameIndex CYBA O 0 14
+    FrameIndex CYBA P 0 15
+}
+
+Model Freddy { 
+    Path "models/Monsters/Freddy"
+    SKIN 0 "freddyskin.png"
+    MODEL 0 "freddyrun.md2"
+    Scale 1.0 1.0 1.0
+    AngleOffset 90
+    Offset 0 0 0
+
+    FrameIndex CYBB A 0 0
+    FrameIndex CYBB B 0 1
+    FrameIndex CYBB C 0 2
+    FrameIndex CYBB D 0 3
+    FrameIndex CYBB E 0 4
+    FrameIndex CYBB F 0 5
+    FrameIndex CYBB G 0 6
+    FrameIndex CYBB H 0 7
+    FrameIndex CYBB I 0 8
+    FrameIndex CYBB J 0 9
+    FrameIndex CYBB K 0 10
+    FrameIndex CYBB L 0 11
+    FrameIndex CYBB M 0 12
+    FrameIndex CYBB N 0 13
+    FrameIndex CYBB O 0 14
+    FrameIndex CYBB P 0 15
+    FrameIndex CYBB Q 0 16
+    FrameIndex CYBB R 0 17
+    FrameIndex CYBB S 0 18
+    FrameIndex CYBB T 0 19
+    FrameIndex CYBB U 0 20
+    FrameIndex CYBB V 0 21
+}
+
+Model Foxy { 
+    Path "models/Monsters/Foxy"
+    SKIN 0 "foxyskin.png"
+    MODEL 0 "FoxyWake.md2"
+    Scale 1.0 1.0 1.0
+    AngleOffset 90
+    Offset 0 0 0
+
+    FrameIndex CYBI A 0 0
+    FrameIndex CYBI B 0 1
+    FrameIndex CYBI C 0 2
+    FrameIndex CYBI D 0 3
+    FrameIndex CYBI E 0 4
+    FrameIndex CYBI F 0 5
+    FrameIndex CYBI G 0 6
+    FrameIndex CYBI H 0 7
+    FrameIndex CYBI I 0 8
+    FrameIndex CYBI J 0 9
+    FrameIndex CYBI K 0 10
+    FrameIndex CYBI L 0 11
+    FrameIndex CYBI M 0 12
+    FrameIndex CYBI N 0 13
+    FrameIndex CYBI O 0 14
+    FrameIndex CYBI P 0 15
+    FrameIndex CYBI Q 0 16
+    FrameIndex CYBI R 0 17
+    FrameIndex CYBI S 0 18
+    FrameIndex CYBI T 0 19
+    FrameIndex CYBI U 0 20
+    FrameIndex CYBI V 0 21
+    FrameIndex CYBI W 0 22
+    FrameIndex CYBI X 0 23
+    FrameIndex CYBI Y 0 24
+    FrameIndex CYBI Z 0 25
+
+    FrameIndex CYBA A 0 26
+    FrameIndex CYBA B 0 27
+    FrameIndex CYBA C 0 28
+    FrameIndex CYBA D 0 29
+    FrameIndex CYBA E 0 30
+    FrameIndex CYBA F 0 31
+}
+
+Model Foxy { 
+    Path "models/Monsters/Foxy"
+    SKIN 0 "foxyskin.png"
+    MODEL 0 "FoxyRun.md2"
+    Scale 1.0 1.0 1.0
+    AngleOffset 90
+    Offset 0 0 0
+
+    FrameIndex CYBB A 0 0
+    FrameIndex CYBB B 0 1
+    FrameIndex CYBB C 0 2
+    FrameIndex CYBB D 0 3
+    FrameIndex CYBB E 0 4
+    FrameIndex CYBB F 0 5
+    FrameIndex CYBB G 0 6
+    FrameIndex CYBB H 0 7
+    FrameIndex CYBB I 0 8
+    FrameIndex CYBB J 0 9
+    FrameIndex CYBB K 0 10
+    FrameIndex CYBB L 0 11
+    FrameIndex CYBB M 0 12
+    FrameIndex CYBB N 0 13
+    FrameIndex CYBB O 0 14
+    FrameIndex CYBB P 0 15
+    FrameIndex CYBB Q 0 16
+}
+
+Model BonnieHead { 
+    Path "models/Monsters/Bonnie"
+    SKIN 0 "skinpage.pcx"
+    MODEL 0 "B.md2"
+    Scale 2.0 2.0 2.0
+    AngleOffset 90
+    Offset 0 0 0
+
+    FrameIndex CYBI A 0 0
+}
+
+Model GoldenFreddy { 
+    Path "models/Monsters/GoldenFreddy"
+    SKIN 0 "goldenfreddyskin.png"
+    MODEL 0 "GoldenFreddy.md2"
+    Scale 1.65 1.65 1.65
+    AngleOffset 90
+    Offset 0 0 0
+
+    FrameIndex CYBI A 0 0
+}
+
+Model ShadowBonnie { 
+    Path "bm"
+    SKIN 0 "bonnieskinBM.png"
+    Path "models/Monsters/Bonnie"
+    MODEL 0 "BonnieIdle.md2"
+    Scale 1.0 1.0 1.0
+    AngleOffset 90
+    Offset 0 0 0
+
+    FrameIndex CYBI A 0 0
+}
+
+Model ShadowBonnie { 
+    Path "bm"
+    SKIN 0 "bonnieskinBM.png"
+    Path "models/Monsters/Bonnie"
+    MODEL 0 "BonnieIdle.md2"
+    Scale 1.0 1.0 1.0
+    AngleOffset 90
+    Offset 0 0 0
+
+    FrameIndex CYBI A 0 0
+}
+
+Model ShadowFreddy { 
+    Path "bm"
+    SKIN 0 "freddyskinBM.png"
+    Path "models/Monsters/Freddy"
+    MODEL 0 "freddytwitch1.md2"
+    Scale 1.0 1.0 1.0
+    AngleOffset 180
+    Offset 0 0 0
+
+    FrameIndex CYBI A 0 1
 }
 
