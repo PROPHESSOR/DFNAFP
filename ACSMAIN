@@ -2,12 +2,11 @@
 #include "zcommon.acs"
 
 function str timeconverter(int tick) {
-	//int tmp = tick/35/60;
-	//if(tmp == 0){
-	//	return 12;
-	//}
-	//return tmp;
-	return StrParam(i:tick/35/60, s:" AM");
+	int tmp = tick/35/60;
+	if(tmp == 0) {
+		tmp = 12;
+	}
+	return StrParam(i:tmp, s:" AM");
 }
 
 script 800 ENTER {
