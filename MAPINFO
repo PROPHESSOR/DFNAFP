@@ -22,6 +22,12 @@ Episode FNAF3
 	NoSkillMenu
 }
 
+Episode FNAF4
+{
+	Name = "Five Night at Freddy's 4"
+	NoSkillMenu
+}
+
 Map FNAF1 "Five Night at Freddy's 1"
 {
 	LevelNum = 1
@@ -40,6 +46,13 @@ Map FNAF3 "Five Night at Freddy's 3"
 {
 	LevelNum = 3
 	Cluster = 3
+	SkyBox = SKY2
+}
+
+Map FNAF4 "Five Night at Freddy's 4"
+{
+	LevelNum = 4
+	Cluster = 4
 	SkyBox = SKY2
 }
 

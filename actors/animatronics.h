@@ -14,8 +14,8 @@ ACTOR Bonnie 10000 {
     Monster
     +LOOKALLAROUND
     +SLIDESONWALLS
-    +INVULNERABLE
-    +NODAMAGE
+    -INVULNERABLE
+    -NODAMAGE
     +REFLECTIVE
     +NOBLOOD
     +NORADIUSDMG
@@ -27,6 +27,7 @@ ACTOR Bonnie 10000 {
 
     States {
     Spawn:
+        TNT1 A 0
         CYBI A 1 A_LookEx (0, 0, 2048, 0, 180, "Chase") 
         "####" "#" 0 A_Jump(2,"Wander","Look","Look","Spawn")
         Loop
@@ -38,72 +39,72 @@ ACTOR Bonnie 10000 {
     Wander:
         CYBB B 2 A_Wander
         "####" "#" 0 A_LookEx (0, 0, 2048, 0, 180, "Chase") 
-        CYBB B 0 A_ChangeVelocity(1,0,0,1)
+        CYBB B 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB C 2 A_Wander
         "####" "#" 0 A_LookEx (0, 0, 2048, 0, 180, "Chase") 
         CYBB D 2 A_Wander
         "####" "#" 0 A_LookEx (0, 0, 2048, 0, 180, "Chase") 
-        CYBB D 0 A_ChangeVelocity(1,0,0,1)
+        CYBB D 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB E 2 A_Wander
         "####" "#" 0 A_LookEx (0, 0, 2048, 0, 180, "Chase") 
         CYBB F 2 A_Wander
         "####" "#" 0 A_LookEx (0, 0, 2048, 0, 180, "Chase") 
-        CYBB F 0 A_ChangeVelocity(1,0,0,1)
+        CYBB F 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB G 2 A_Wander
         "####" "#" 0 A_LookEx (0, 0, 2048, 0, 180, "Chase") 
         CYBB H 2 A_Wander
         "####" "#" 0 A_LookEx (0, 0, 2048, 0, 180, "Chase") 
-        CYBB H 0 A_ChangeVelocity(1,0,0,1)
+        CYBB H 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB I 2 A_Wander
         "####" "#" 0 A_PlaySound("pstepm",0,1.0)
         "####" "#" 0 A_LookEx (0, 0, 2048, 0, 180, "Chase") 
         CYBB J 2 A_Wander
         "####" "#" 0 A_LookEx (0, 0, 2048, 0, 180, "Chase") 
-        CYBB J 0 A_ChangeVelocity(1,0,0,1)
+        CYBB J 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB K 2 A_Wander
         "####" "#" 0 A_LookEx (0, 0, 2048, 0, 180, "Chase") 
         CYBB L 2 A_Wander
         "####" "#" 0 A_LookEx (0, 0, 2048, 0, 180, "Chase") 
-        CYBB L 0 A_ChangeVelocity(1,0,0,1)
+        CYBB L 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB M 2 A_Wander
         "####" "#" 0 A_LookEx (0, 0, 2048, 0, 180, "Chase") 
         CYBB N 2 A_Wander
         "####" "#" 0 A_LookEx (0, 0, 2048, 0, 180, "Chase") 
-        CYBB N 0 A_ChangeVelocity(1,0,0,1)
+        CYBB N 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB O 2 A_Wander
         "####" "#" 0 A_LookEx (0, 0, 2048, 0, 180, "Chase") 
         CYBB P 2 A_Wander
         "####" "#" 0 A_LookEx (0, 0, 2048, 0, 180, "Chase") 
-        CYBB P 0 A_ChangeVelocity(1,0,0,1)
+        CYBB P 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB Q 2 A_Wander
         "####" "#" 0 A_LookEx (0, 0, 2048, 0, 180, "Chase") 
         CYBB R 2 A_Wander
         "####" "#" 0 A_LookEx (0, 0, 2048, 0, 180, "Chase") 
-        CYBB R 0 A_ChangeVelocity(1,0,0,1)
+        CYBB R 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB S 2 A_Wander
         "####" "#" 0 A_LookEx (0, 0, 2048, 0, 180, "Chase") 
         CYBB T 2 A_Wander
         "####" "#" 0 A_LookEx (0, 0, 2048, 0, 180, "Chase") 
-        CYBB T 0 A_ChangeVelocity(1,0,0,1)
+        CYBB T 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB U 2 A_Wander
         "####" "#" 0 A_PlaySound("pstepm",0,1.0)
         "####" "#" 0 A_LookEx (0, 0, 2048, 0, 180, "Chase") 
         CYBB V 2 A_Wander
         "####" "#" 0 A_LookEx (0, 0, 2048, 0, 180, "Chase") 
-        CYBB V 0 A_ChangeVelocity(1,0,0,1)
+        CYBB V 0 A_ChangeVelocity(1, 0, 0, 3)
         "####" "#" 0 A_Jump(8,"Look","Spawn","Spawn","Spawn")
         "####" "#" 0 A_Jump(32,"BreathingWander")
         Loop
     BreathingWander:
-	"####" "#" 0 A_PlaySound("Breathing",0,1.0)
-	Goto Wander
+        "####" "#" 0 A_PlaySound("Breathing",0,1.0)
+        Goto Wander
     Chase:
-	//TNT1 A 0 ACS_EXECUTEALWAYS(50,0,0,0)
+        //TNT1 A 0 ACS_EXECUTEALWAYS(50,0,0,0)
     ChaseBegin:
-	TNT1 A 0 A_SetUserVar("user_chasing",0)
-	TNT1 A 0 A_JumpIfInTargetInventory("TargetFastMoving", 1, "ChaseFastTarget")
-	TNT1 A 0 A_JumpIfInTargetInventory("TargetSlowMoving", 1, "ChaseSlowTarget")
-	TNT1 A 0 A_JumpIfInTargetInventory("TargetNotMoving", 1, "ChaseIdleTarget")
+        TNT1 A 0 A_SetUserVar("user_chasing",0)
+        TNT1 A 0 A_JumpIfInTargetInventory("TargetFastMoving", 1, "ChaseFastTarget")
+        TNT1 A 0 A_JumpIfInTargetInventory("TargetSlowMoving", 1, "ChaseSlowTarget")
+        TNT1 A 0 A_JumpIfInTargetInventory("TargetNotMoving", 1, "ChaseIdleTarget")
     ChaseFastTarget:
         TNT1 A 0 A_TakeInventory ("IsChasingSlow", 999)
         TNT1 A 0 A_TakeInventory ("IsChasingMed", 999)
@@ -115,181 +116,181 @@ ACTOR Bonnie 10000 {
         //"####" "#" 0 A_FaceTarget(5)
         CYBB D 1 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
-        CYBB D 0 A_ChangeVelocity(1,0,0,1)
+        CYBB D 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB E 1 A_Chase
         //"####" "#" 0 A_FaceTarget(5) 
         CYBB F 1 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
-        CYBB F 0 A_ChangeVelocity(1,0,0,1)
+        CYBB F 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB G 1 A_Chase
         //"####" "#" 0 A_FaceTarget(5) 
         CYBB H 1 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
-        CYBB H 0 A_ChangeVelocity(1,0,0,1)
+        CYBB H 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB I 1 A_Chase
         "####" "#" 0 A_PlaySound("pstepm",0,1.0)
         //"####" "#" 0 A_FaceTarget(5)
         CYBB J 1 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
-        CYBB J 0 A_ChangeVelocity(1,0,0,1)
+        CYBB J 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB K 1 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
         CYBB L 1 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
-        CYBB L 0 A_ChangeVelocity(1,0,0,1)
+        CYBB L 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB M 1 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
         CYBB N 1 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
-        CYBB N 0 A_ChangeVelocity(1,0,0,1)
+        CYBB N 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB O 1 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
         CYBB P 1 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
-        CYBB P 0 A_ChangeVelocity(1,0,0,1)
+        CYBB P 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB Q 1 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
         CYBB R 1 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
-        CYBB R 0 A_ChangeVelocity(1,0,0,1)
+        CYBB R 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB S 1 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
         CYBB T 1 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
-        CYBB T 0 A_ChangeVelocity(1,0,0,1)
+        CYBB T 0 A_ChangeVelocity(1, 0, 0, 3)
         "####" "#" 0 A_PlaySound("pstepm",0,1.0)
         CYBB U 1 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
         CYBB V 1 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
-        "####" "#" 0 A_ChangeVelocity(1,0,0,1)
+        "####" "#" 0 A_ChangeVelocity(1, 0, 0, 3)
         "####" "#" 0 A_Jump(32,"BreathingChase")
         "####" "#" 0 A_Jump(8,"ChaseFastTarget")
         "####" "#" 0 A_JumpIfTargetInLOS ("ChaseFastTarget", 360, JLOSF_DEADNOJUMP, 0, 0)
         Goto ChaseBegin
     ChaseSlowTarget:
-	TNT1 A 0 A_JumpIfCloser(896,"ChaseSlowTarget2")
-	Goto ChaseFastTarget
+        TNT1 A 0 A_JumpIfCloser(896,"ChaseSlowTarget2")
+        Goto ChaseFastTarget
     ChaseSlowTarget2:
         TNT1 A 0 A_TakeInventory ("IsChasingFast", 999)
         TNT1 A 0 A_TakeInventory ("IsChasingSlow", 999)
         TNT1 A 0 A_GiveInventory ("IsChasingMed", 1)
         CYBB B 4 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
-        "####" "#" 0 A_ChangeVelocity(1,0,0,1)
+        "####" "#" 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB C 4 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
         CYBB D 4 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
-        CYBB D 0 A_ChangeVelocity(1,0,0,1)
+        CYBB D 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB E 4 A_Chase
         //"####" "#" 0 A_FaceTarget(5) 
         CYBB F 4 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
-        CYBB F 0 A_ChangeVelocity(1,0,0,1)
+        CYBB F 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB G 4 A_Chase
         //"####" "#" 0 A_FaceTarget(5) 
         CYBB H 4 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
-        CYBB H 0 A_ChangeVelocity(1,0,0,1)
+        CYBB H 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB I 4 A_Chase
         "####" "#" 0 A_PlaySound("pstepm",0,1.0)
         //"####" "#" 0 A_FaceTarget(5)
         CYBB J 4 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
-        CYBB J 0 A_ChangeVelocity(1,0,0,1)
+        CYBB J 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB K 4 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
         CYBB L 4 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
-        CYBB L 0 A_ChangeVelocity(1,0,0,1)
+        CYBB L 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB M 4 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
         CYBB N 4 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
-        CYBB N 0 A_ChangeVelocity(1,0,0,1)
+        CYBB N 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB O 4 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
         CYBB P 4 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
-        CYBB P 0 A_ChangeVelocity(1,0,0,1)
+        CYBB P 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB Q 4 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
         CYBB R 4 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
-        CYBB R 0 A_ChangeVelocity(1,0,0,1)
+        CYBB R 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB S 4 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
         CYBB T 4 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
-        CYBB T 0 A_ChangeVelocity(1,0,0,1)
+        CYBB T 0 A_ChangeVelocity(1, 0, 0, 3)
         "####" "#" 0 A_PlaySound("pstepm",0,1.0)
         CYBB U 4 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
         CYBB V 4 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
-        "####" "#" 0 A_ChangeVelocity(1,0,0,1)
+        "####" "#" 0 A_ChangeVelocity(1, 0, 0, 3)
         "####" "#" 0 A_Jump(32,"BreathingChase","LookAround")
         "####" "#" 0 A_JumpIfTargetInLOS ("ChaseSlowTarget", 90, JLOSF_DEADNOJUMP, 0, 0)
         "####" "#" 0 A_JumpIfInTargetInventory("TargetFastMoving", 1, "ChaseFastTarget")
         "####" "#" 0 A_JumpIfInTargetInventory("TargetNotMoving", 1, "ChaseIdleTarget")
         Goto ChaseBegin
     ChaseIdleTarget:
-	TNT1 A 0 A_JumpIfCloser(512,"ChaseIdleTarget2")
-	Goto ChaseSlowTarget2
+        TNT1 A 0 A_JumpIfCloser(512,"ChaseIdleTarget2")
+        Goto ChaseSlowTarget2
     ChaseIdleTarget2:
-	TNT1 A 0 A_JumpIfInTargetInventory("TargetFastMoving", 1, "ChaseFastTarget")
+        TNT1 A 0 A_JumpIfInTargetInventory("TargetFastMoving", 1, "ChaseFastTarget")
         TNT1 A 0 A_TakeInventory ("IsChasingFast", 999)
         TNT1 A 0 A_TakeInventory ("IsChasingMed", 999)
         TNT1 A 0 A_GiveInventory ("IsChasingSlow", 1)
         CYBB B 7 A_Chase
-        "####" "#" 0 A_ChangeVelocity(1,0,0,1)
+        "####" "#" 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB C 7 A_Chase
         CYBB D 7 A_Chase
-        CYBB D 0 A_ChangeVelocity(1,0,0,1)
+        CYBB D 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB E 7 A_Chase
         CYBB F 7 A_Chase
-        CYBB F 0 A_ChangeVelocity(1,0,0,1)
+        CYBB F 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB G 7 A_Chase 
         CYBB H 7 A_Chase
-        CYBB H 0 A_ChangeVelocity(1,0,0,1)
+        CYBB H 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB I 7 A_Chase
         "####" "#" 0 A_PlaySound("pstepm",0,1.0)
         CYBB J 7 A_Chase
-        CYBB J 0 A_ChangeVelocity(1,0,0,1)
+        CYBB J 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB K 7 A_Chase
         CYBB L 7 A_Chase
-        CYBB L 0 A_ChangeVelocity(1,0,0,1)
+        CYBB L 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB M 7 A_Chase
         CYBB N 7 A_Chase
-        CYBB N 0 A_ChangeVelocity(1,0,0,1)
+        CYBB N 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB O 7 A_Chase
         CYBB P 7 A_Chase
-        CYBB P 0 A_ChangeVelocity(1,0,0,1)
+        CYBB P 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB Q 7 A_Chase
         CYBB R 7 A_Chase
-        CYBB R 0 A_ChangeVelocity(1,0,0,1)
+        CYBB R 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB S 7 A_Chase
         CYBB T 7 A_Chase
-        CYBB T 0 A_ChangeVelocity(1,0,0,1)
+        CYBB T 0 A_ChangeVelocity(1, 0, 0, 3)
         "####" "#" 0 A_PlaySound("pstepm",0,1.0)
         CYBB U 7 A_Chase
         CYBB V 7 A_Chase
-        "####" "#" 0 A_ChangeVelocity(1,0,0,1)
+        "####" "#" 0 A_ChangeVelocity(1, 0, 0, 3)
         "####" "#" 0 A_Jump(52,"BreathingChase","LookAround")
         "####" "#" 0 A_JumpIfTargetInLOS ("ChaseIdleTarget", 15, JLOSF_DEADNOJUMP, 0, 0)
         "####" "#" 0 A_Jump(112,"LoseTarget","LookAround","Standing","Standing")
         Goto ChaseBegin
     BreathingChase:
-	"####" "#" 0 A_PlaySound("Breathing",0,1.0)
-	Goto ChaseBegin
+        "####" "#" 0 A_PlaySound("Breathing",0,1.0)
+        Goto ChaseBegin
     ChasingEnd:
         "####" "#" 0 A_JumpIfTargetInLOS ("ChaseBegin", 270, JLOSF_DEADNOJUMP, 1024, 0)
         "####" "#" 0 A_JumpIfInTargetLOS ("ChaseBegin", 45, JLOSF_DEADNOJUMP, 1024, 0)
         Goto LoseTarget
     LoseTarget:
         TNT1 A 0 A_ClearTarget
-	//TNT1 A 0 ACS_EXECUTEALWAYS(51,0,0,0)
+        //TNT1 A 0 ACS_EXECUTEALWAYS(51,0,0,0)
     LookAround:
         TNT1 A 0 A_TakeInventory ("IsChasingFast", 999)
         TNT1 A 0 A_TakeInventory ("IsChasingMed", 999)
@@ -308,7 +309,7 @@ ACTOR Bonnie 10000 {
         TNT1 A 0 A_TakeInventory ("IsChasingFast", 999)
         TNT1 A 0 A_TakeInventory ("IsChasingMed", 999)
         TNT1 A 0 A_TakeInventory ("IsChasingSlow", 999)
-	CYBI A 0 ACS_EXECUTEALWAYS(101,0,0,0)
+        CYBI A 0 ACS_EXECUTEALWAYS(101,0,0,0)
         CYBI A 140 A_FaceTarget
         Goto Spawn
     Pain:
@@ -330,6 +331,8 @@ ACTOR Bonnie 10000 {
         TROO RST 5
         TROO U -1
         Stop
+    See:
+        Goto LookAround
     Raise:
         TROO MLKJI 8
         Goto See
@@ -351,8 +354,8 @@ ACTOR Chica 10001 {
     MaxDropOffHeight 32
     Monster
     +SLIDESONWALLS
-    +INVULNERABLE
-    +NODAMAGE
+    -INVULNERABLE
+    -NODAMAGE
     SeeSound ""
     PainSound ""
     DeathSound ""
@@ -361,6 +364,7 @@ ACTOR Chica 10001 {
 
     States {
     Spawn:
+        TNT1 A 0
         CYBI A 1 A_LookEx (LOF_NOSOUNDCHECK, 0, 2048, 0, 180, "Chase") 
         "####" "#" 0 A_Jump(2,"Wander","Look","Look","Spawn")
         Loop
@@ -372,59 +376,59 @@ ACTOR Chica 10001 {
     Wander:
         CYBB B 2 A_Wander
         "####" "#" 0 A_LookEx (0, 0, 2048, 0, 180, "Chase") 
-        CYBB B 0 A_ChangeVelocity(1,0,0,1)
+        CYBB B 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB C 2 A_Wander
         "####" "#" 0 A_LookEx (0, 0, 2048, 0, 180, "Chase") 
         CYBB D 2 A_Wander
         "####" "#" 0 A_LookEx (0, 0, 2048, 0, 180, "Chase") 
-        CYBB D 0 A_ChangeVelocity(1,0,0,1)
+        CYBB D 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB E 2 A_Wander
         "####" "#" 0 A_LookEx (0, 0, 2048, 0, 180, "Chase") 
         CYBB F 2 A_Wander
         "####" "#" 0 A_LookEx (0, 0, 2048, 0, 180, "Chase") 
-        CYBB F 0 A_ChangeVelocity(1,0,0,1)
+        CYBB F 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB G 2 A_Wander
         "####" "#" 0 A_LookEx (0, 0, 2048, 0, 180, "Chase") 
         CYBB H 2 A_Wander
         "####" "#" 0 A_LookEx (0, 0, 2048, 0, 180, "Chase") 
-        CYBB H 0 A_ChangeVelocity(1,0,0,1)
+        CYBB H 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB I 2 A_Wander
         "####" "#" 0 A_PlaySound("pstepm",0,1.0)
         "####" "#" 0 A_LookEx (0, 0, 2048, 0, 180, "Chase") 
         CYBB J 2 A_Wander
         "####" "#" 0 A_LookEx (0, 0, 2048, 0, 180, "Chase") 
-        CYBB J 0 A_ChangeVelocity(1,0,0,1)
+        CYBB J 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB K 2 A_Wander
         "####" "#" 0 A_LookEx (0, 0, 2048, 0, 180, "Chase") 
         CYBB L 2 A_Wander
         "####" "#" 0 A_LookEx (0, 0, 2048, 0, 180, "Chase") 
-        CYBB L 0 A_ChangeVelocity(1,0,0,1)
+        CYBB L 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB M 2 A_Wander
         "####" "#" 0 A_LookEx (0, 0, 2048, 0, 180, "Chase") 
         CYBB N 2 A_Wander
         "####" "#" 0 A_LookEx (0, 0, 2048, 0, 180, "Chase") 
-        CYBB N 0 A_ChangeVelocity(1,0,0,1)
+        CYBB N 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB O 2 A_Wander
         "####" "#" 0 A_LookEx (0, 0, 2048, 0, 180, "Chase") 
         CYBB P 2 A_Wander
         "####" "#" 0 A_LookEx (0, 0, 2048, 0, 180, "Chase") 
-        CYBB P 0 A_ChangeVelocity(1,0,0,1)
+        CYBB P 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB Q 2 A_Wander
         "####" "#" 0 A_LookEx (0, 0, 2048, 0, 180, "Chase") 
         CYBB R 2 A_Wander
         "####" "#" 0 A_LookEx (0, 0, 2048, 0, 180, "Chase") 
-        CYBB R 0 A_ChangeVelocity(1,0,0,1)
+        CYBB R 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB S 2 A_Wander
         "####" "#" 0 A_LookEx (0, 0, 2048, 0, 180, "Chase") 
         CYBB T 2 A_Wander
         "####" "#" 0 A_LookEx (0, 0, 2048, 0, 180, "Chase") 
-        CYBB T 0 A_ChangeVelocity(1,0,0,1)
+        CYBB T 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB U 2 A_Wander
         "####" "#" 0 A_PlaySound("pstepm",0,1.0)
         "####" "#" 0 A_LookEx (0, 0, 2048, 0, 180, "Chase") 
         CYBB V 2 A_Wander
         "####" "#" 0 A_LookEx (0, 0, 2048, 0, 180, "Chase") 
-        CYBB V 0 A_ChangeVelocity(1,0,0,1)
+        CYBB V 0 A_ChangeVelocity(1, 0, 0, 3)
         "####" "#" 0 A_Jump(6,"Look","Spawn","Spawn","Spawn")
         "####" "#" 0 A_Jump(32,"BreathingWander")
         Loop
@@ -449,54 +453,54 @@ ACTOR Chica 10001 {
         //"####" "#" 0 A_FaceTarget(5)
         CYBB D 1 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
-        CYBB D 0 A_ChangeVelocity(1,0,0,1)
+        CYBB D 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB E 1 A_Chase
         //"####" "#" 0 A_FaceTarget(5) 
         CYBB F 1 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
-        CYBB F 0 A_ChangeVelocity(1,0,0,1)
+        CYBB F 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB G 1 A_Chase
         //"####" "#" 0 A_FaceTarget(5) 
         CYBB H 1 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
-        CYBB H 0 A_ChangeVelocity(1,0,0,1)
+        CYBB H 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB I 1 A_Chase
         "####" "#" 0 A_PlaySound("pstepm",0,1.0)
         //"####" "#" 0 A_FaceTarget(5)
         CYBB J 1 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
-        CYBB J 0 A_ChangeVelocity(1,0,0,1)
+        CYBB J 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB K 1 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
         CYBB L 1 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
-        CYBB L 0 A_ChangeVelocity(1,0,0,1)
+        CYBB L 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB M 1 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
         CYBB N 1 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
-        CYBB N 0 A_ChangeVelocity(1,0,0,1)
+        CYBB N 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB O 1 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
         CYBB P 1 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
-        CYBB P 0 A_ChangeVelocity(1,0,0,1)
+        CYBB P 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB Q 1 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
         CYBB R 1 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
-        CYBB R 0 A_ChangeVelocity(1,0,0,1)
+        CYBB R 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB S 1 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
         CYBB T 1 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
-        CYBB T 0 A_ChangeVelocity(1,0,0,1)
+        CYBB T 0 A_ChangeVelocity(1, 0, 0, 3)
         "####" "#" 0 A_PlaySound("pstepm",0,1.0)
         CYBB U 1 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
         CYBB V 1 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
-        "####" "#" 0 A_ChangeVelocity(1,0,0,1)
+        "####" "#" 0 A_ChangeVelocity(1, 0, 0, 3)
         "####" "#" 0 A_Jump(32,"BreathingChase")
         "####" "#" 0 A_Jump(8,"ChaseFastTarget")
         "####" "#" 0 A_JumpIfTargetInLOS ("ChaseFastTarget", 360, JLOSF_DEADNOJUMP, 0, 0)
@@ -510,59 +514,59 @@ ACTOR Chica 10001 {
         TNT1 A 0 A_GiveInventory ("IsChasingMed", 1)
         CYBB B 4 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
-        "####" "#" 0 A_ChangeVelocity(1,0,0,1)
+        "####" "#" 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB C 4 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
         CYBB D 4 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
-        CYBB D 0 A_ChangeVelocity(1,0,0,1)
+        CYBB D 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB E 4 A_Chase
         //"####" "#" 0 A_FaceTarget(5) 
         CYBB F 4 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
-        CYBB F 0 A_ChangeVelocity(1,0,0,1)
+        CYBB F 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB G 4 A_Chase
         //"####" "#" 0 A_FaceTarget(5) 
         CYBB H 4 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
-        CYBB H 0 A_ChangeVelocity(1,0,0,1)
+        CYBB H 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB I 4 A_Chase
         "####" "#" 0 A_PlaySound("pstepm",0,1.0)
         //"####" "#" 0 A_FaceTarget(5)
         CYBB J 4 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
-        CYBB J 0 A_ChangeVelocity(1,0,0,1)
+        CYBB J 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB K 4 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
         CYBB L 4 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
-        CYBB L 0 A_ChangeVelocity(1,0,0,1)
+        CYBB L 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB M 4 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
         CYBB N 4 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
-        CYBB N 0 A_ChangeVelocity(1,0,0,1)
+        CYBB N 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB O 4 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
         CYBB P 4 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
-        CYBB P 0 A_ChangeVelocity(1,0,0,1)
+        CYBB P 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB Q 4 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
         CYBB R 4 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
-        CYBB R 0 A_ChangeVelocity(1,0,0,1)
+        CYBB R 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB S 4 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
         CYBB T 4 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
-        CYBB T 0 A_ChangeVelocity(1,0,0,1)
+        CYBB T 0 A_ChangeVelocity(1, 0, 0, 3)
         "####" "#" 0 A_PlaySound("pstepm",0,1.0)
         CYBB U 4 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
         CYBB V 4 A_Chase
         //"####" "#" 0 A_FaceTarget(5)
-        "####" "#" 0 A_ChangeVelocity(1,0,0,1)
+        "####" "#" 0 A_ChangeVelocity(1, 0, 0, 3)
         "####" "#" 0 A_Jump(32,"BreathingChase","LookAround")
         "####" "#" 0 A_JumpIfTargetInLOS ("ChaseSlowTarget", 90, JLOSF_DEADNOJUMP, 0, 0)
         "####" "#" 0 A_JumpIfInTargetInventory("TargetFastMoving", 1, "ChaseFastTarget")
@@ -577,39 +581,39 @@ ACTOR Chica 10001 {
         TNT1 A 0 A_TakeInventory ("IsChasingMed", 999)
         TNT1 A 0 A_GiveInventory ("IsChasingSlow", 1)
         CYBB B 7 A_Chase
-        "####" "#" 0 A_ChangeVelocity(1,0,0,1)
+        "####" "#" 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB C 7 A_Chase
         CYBB D 7 A_Chase
-        CYBB D 0 A_ChangeVelocity(1,0,0,1)
+        CYBB D 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB E 7 A_Chase
         CYBB F 7 A_Chase
-        CYBB F 0 A_ChangeVelocity(1,0,0,1)
+        CYBB F 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB G 7 A_Chase 
         CYBB H 7 A_Chase
-        CYBB H 0 A_ChangeVelocity(1,0,0,1)
+        CYBB H 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB I 7 A_Chase
         "####" "#" 0 A_PlaySound("pstepm",0,1.0)
         CYBB J 7 A_Chase
-        CYBB J 0 A_ChangeVelocity(1,0,0,1)
+        CYBB J 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB K 7 A_Chase
         CYBB L 7 A_Chase
-        CYBB L 0 A_ChangeVelocity(1,0,0,1)
+        CYBB L 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB M 7 A_Chase
         CYBB N 7 A_Chase
-        CYBB N 0 A_ChangeVelocity(1,0,0,1)
+        CYBB N 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB O 7 A_Chase
         CYBB P 7 A_Chase
-        CYBB P 0 A_ChangeVelocity(1,0,0,1)
+        CYBB P 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB Q 7 A_Chase
         CYBB R 7 A_Chase
-        CYBB R 0 A_ChangeVelocity(1,0,0,1)
+        CYBB R 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB S 7 A_Chase
         CYBB T 7 A_Chase
-        CYBB T 0 A_ChangeVelocity(1,0,0,1)
+        CYBB T 0 A_ChangeVelocity(1, 0, 0, 3)
         "####" "#" 0 A_PlaySound("pstepm",0,1.0)
         CYBB U 7 A_Chase
         CYBB V 7 A_Chase
-        "####" "#" 0 A_ChangeVelocity(1,0,0,1)
+        "####" "#" 0 A_ChangeVelocity(1, 0, 0, 3)
         "####" "#" 0 A_Jump(48,"BreathingChase","LookAround")
         "####" "#" 0 A_JumpIfTargetInLOS ("ChaseIdleTarget", 30, JLOSF_DEADNOJUMP, 0, 0)
         "####" "#" 0 A_Jump(112,"LoseTarget","LookAround","Standing","Standing")
@@ -693,8 +697,8 @@ ACTOR Freddy 10002 {
     CameraHeight 56
     Monster
     +SLIDESONWALLS
-    +INVULNERABLE
-    +NODAMAGE
+    -INVULNERABLE
+    -NODAMAGE
     SeeSound ""
     PainSound ""
     DeathSound ""
@@ -703,7 +707,8 @@ ACTOR Freddy 10002 {
 
     States {
     Spawn:
-	CYBI A 0 A_JumpIfInventory("FreddyCheck2", 1, "JingleWander")
+        TNT1 A 0
+        CYBI A 0 A_JumpIfInventory("FreddyCheck2", 1, "JingleWander")
         CYBI A 1 A_LookEx (LOF_NOSOUNDCHECK, 0, 2048, 0, 360, "Chase") 
         TNT1 A 0 A_Jump(1,"Spawn","Wander","Wander","CloakWander")
         Loop
@@ -727,7 +732,7 @@ ACTOR Freddy 10002 {
         CYBI A 1 A_FaceTarget
         CYBI A 0 A_Chase
         CYBI A 1 A_FaceTarget
-        "####" "#" 0 A_ChangeVelocity(1,0,0,1)
+        "####" "#" 0 A_ChangeVelocity(1, 0, 0, 3)
         Loop
     Watch:
         	TNT1 A 0 A_TakeInventory ("IsChasingFast", 999)
@@ -824,77 +829,77 @@ ACTOR Freddy 10002 {
         CYBB B 1 A_Wander
 	"####" "#" 0 //A_CheckSight ("Watch") 
         "####" "#" 0 A_LookEx (LOF_NOSOUNDCHECK, 0, 2048, 0, 360, "Chase") 
-        CYBB B 0 A_ChangeVelocity(1,0,0,1)
+        CYBB B 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB C 1 A_Wander
 	"####" "#" 0 //A_CheckSight ("Watch") 
         "####" "#" 0 A_LookEx (LOF_NOSOUNDCHECK, 0, 2048, 0, 360, "Chase") 
         CYBB D 1 A_Wander
 	"####" "#" 0 //A_CheckSight ("Watch") 
         "####" "#" 0 A_LookEx (LOF_NOSOUNDCHECK, 0, 2048, 0, 360, "Chase") 
-        CYBB D 0 A_ChangeVelocity(1,0,0,1)
+        CYBB D 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB E 1 A_Wander
 	"####" "#" 0 //A_CheckSight ("Watch") 
         "####" "#" 0 A_LookEx (LOF_NOSOUNDCHECK, 0, 2048, 0, 360, "Chase") 
         CYBB F 1 A_Wander
 	"####" "#" 0 //A_CheckSight ("Watch") 
         "####" "#" 0 A_LookEx (LOF_NOSOUNDCHECK, 0, 2048, 0, 360, "Chase") 
-        CYBB F 0 A_ChangeVelocity(1,0,0,1)
+        CYBB F 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB G 1 A_Wander
 	"####" "#" 0 //A_CheckSight ("Watch") 
         "####" "#" 0 A_LookEx (LOF_NOSOUNDCHECK, 0, 2048, 0, 360, "Chase") 
         CYBB H 1 A_Wander
 	"####" "#" 0 //A_CheckSight ("Watch") 
         "####" "#" 0 A_LookEx (LOF_NOSOUNDCHECK, 0, 2048, 0, 360, "Chase") 
-        CYBB H 0 A_ChangeVelocity(1,0,0,1)
+        CYBB H 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB I 1 A_Wander
 	"####" "#" 0 //A_CheckSight ("Watch") 
         "####" "#" 0 A_LookEx (LOF_NOSOUNDCHECK, 0, 2048, 0, 360, "Chase") 
         CYBB J 1 A_Wander
 	"####" "#" 0 //A_CheckSight ("Watch") 
         "####" "#" 0 A_LookEx (LOF_NOSOUNDCHECK, 0, 2048, 0, 360, "Chase") 
-        CYBB J 0 A_ChangeVelocity(1,0,0,1)
+        CYBB J 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB K 1 A_Wander
 	"####" "#" 0 //A_CheckSight ("Watch") 
         "####" "#" 0 A_LookEx (LOF_NOSOUNDCHECK, 0, 2048, 0, 360, "Chase") 
         CYBB L 1 A_Wander
 	"####" "#" 0 //A_CheckSight ("Watch") 
         "####" "#" 0 A_LookEx (LOF_NOSOUNDCHECK, 0, 2048, 0, 360, "Chase") 
-        CYBB L 0 A_ChangeVelocity(1,0,0,1)
+        CYBB L 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB M 1 A_Wander
 	"####" "#" 0 //A_CheckSight ("Watch") 
         "####" "#" 0 A_LookEx (LOF_NOSOUNDCHECK, 0, 2048, 0, 360, "Chase") 
         CYBB N 1 A_Wander
 	"####" "#" 0 //A_CheckSight ("Watch") 
         "####" "#" 0 A_LookEx (LOF_NOSOUNDCHECK, 0, 2048, 0, 360, "Chase") 
-        CYBB N 0 A_ChangeVelocity(1,0,0,1)
+        CYBB N 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB O 1 A_Wander
 	"####" "#" 0 //A_CheckSight ("Watch") 
         "####" "#" 0 A_LookEx (LOF_NOSOUNDCHECK, 0, 2048, 0, 360, "Chase") 
         CYBB P 1 A_Wander
 	"####" "#" 0 //A_CheckSight ("Watch") 
         "####" "#" 0 A_LookEx (LOF_NOSOUNDCHECK, 0, 2048, 0, 360, "Chase") 
-        CYBB P 0 A_ChangeVelocity(1,0,0,1)
+        CYBB P 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB Q 1 A_Wander
 	"####" "#" 0 //A_CheckSight ("Watch") 
         "####" "#" 0 A_LookEx (LOF_NOSOUNDCHECK, 0, 2048, 0, 360, "Chase") 
         CYBB R 1 A_Wander
 	"####" "#" 0 //A_CheckSight ("Watch") 
         "####" "#" 0 A_LookEx (LOF_NOSOUNDCHECK, 0, 2048, 0, 360, "Chase") 
-        CYBB R 0 A_ChangeVelocity(1,0,0,1)
+        CYBB R 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB S 1 A_Wander
 	"####" "#" 0 //A_CheckSight ("Watch") 
         "####" "#" 0 A_LookEx (LOF_NOSOUNDCHECK, 0, 2048, 0, 360, "Chase") 
         CYBB T 1 A_Wander
 	"####" "#" 0 //A_CheckSight ("Watch") 
         "####" "#" 0 A_LookEx (LOF_NOSOUNDCHECK, 0, 2048, 0, 360, "Chase") 
-        CYBB T 0 A_ChangeVelocity(1,0,0,1)
+        CYBB T 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB U 1 A_Wander
 	"####" "#" 0 //A_CheckSight ("Watch") 
         "####" "#" 0 A_LookEx (LOF_NOSOUNDCHECK, 0, 2048, 0, 360, "Chase") 
         CYBB V 1 A_Wander
 	"####" "#" 0 //A_CheckSight ("Watch") 
         "####" "#" 0 A_LookEx (LOF_NOSOUNDCHECK, 0, 2048, 0, 360, "Chase") 
-        CYBB V 0 A_ChangeVelocity(1,0,0,1)
+        CYBB V 0 A_ChangeVelocity(1, 0, 0, 3)
         "####" "#" 0 A_Jump(16,"Spawn","Spawn","Spawn")
         "####" "#" 0 A_Jump(24,"LaughWander")
         Loop
@@ -984,102 +989,102 @@ ACTOR Freddy 10002 {
 	"####" "#" 0 //A_CheckSight ("Watch") 
         CYBB C 1 A_Chase
         CYBB C 0 A_FaceTarget(5)
-        "####" "#" 0 A_ChangeVelocity(1,0,0,1)
+        "####" "#" 0 A_ChangeVelocity(1, 0, 0, 3)
 	"####" "#" 0 A_JumpIfInTargetLOS ("Watch", 160, JLOSF_DEADNOJUMP, 2048, 0)
 	"####" "#" 0 //A_CheckSight ("Watch") 
         CYBB D 1 A_Chase
         CYBB D 0 A_FaceTarget(5)
-        CYBB D 0 A_ChangeVelocity(1,0,0,1)
+        CYBB D 0 A_ChangeVelocity(1, 0, 0, 3)
 	"####" "#" 0 A_JumpIfInTargetLOS ("Watch", 160, JLOSF_DEADNOJUMP, 2048, 0)
 	"####" "#" 0 //A_CheckSight ("Watch") 
         CYBB E 1 A_Chase
         CYBB E 0 A_FaceTarget(5) 
-        "####" "#" 0 A_ChangeVelocity(1,0,0,1)
+        "####" "#" 0 A_ChangeVelocity(1, 0, 0, 3)
 	"####" "#" 0 A_JumpIfInTargetLOS ("Watch", 160, JLOSF_DEADNOJUMP, 2048, 0)
 	"####" "#" 0 //A_CheckSight ("Watch") 
         CYBB F 1 A_Chase
         CYBB F 0 A_FaceTarget(5)
-        CYBB F 0 A_ChangeVelocity(1,0,0,1)
+        CYBB F 0 A_ChangeVelocity(1, 0, 0, 3)
 	"####" "#" 0 A_JumpIfInTargetLOS ("Watch", 160, JLOSF_DEADNOJUMP, 2048, 0)
 	"####" "#" 0 //A_CheckSight ("Watch") 
         CYBB G 1 A_Chase
         CYBB G 0 A_FaceTarget(5) 
-        "####" "#" 0 A_ChangeVelocity(1,0,0,1)
+        "####" "#" 0 A_ChangeVelocity(1, 0, 0, 3)
 	"####" "#" 0 A_JumpIfInTargetLOS ("Watch", 160, JLOSF_DEADNOJUMP, 2048, 0)
 	"####" "#" 0 //A_CheckSight ("Watch") 
         CYBB H 1 A_Chase
         CYBB H 0 A_FaceTarget(5)
-        CYBB H 0 A_ChangeVelocity(1,0,0,1)
+        CYBB H 0 A_ChangeVelocity(1, 0, 0, 3)
 	"####" "#" 0 A_JumpIfInTargetLOS ("Watch", 160, JLOSF_DEADNOJUMP, 2048, 0)
 	"####" "#" 0 //A_CheckSight ("Watch") 
         CYBB I 1 A_Chase
         CYBB I 0 A_FaceTarget(5)
-        "####" "#" 0 A_ChangeVelocity(1,0,0,1)
+        "####" "#" 0 A_ChangeVelocity(1, 0, 0, 3)
 	"####" "#" 0 A_JumpIfInTargetLOS ("Watch", 160, JLOSF_DEADNOJUMP, 2048, 0)
 	"####" "#" 0 //A_CheckSight ("Watch") 
         CYBB J 1 A_Chase
         CYBB J 0 A_FaceTarget(5)
-        CYBB J 0 A_ChangeVelocity(1,0,0,1)
+        CYBB J 0 A_ChangeVelocity(1, 0, 0, 3)
 	"####" "#" 0 A_JumpIfInTargetLOS ("Watch", 160, JLOSF_DEADNOJUMP, 2048, 0)
 	"####" "#" 0 //A_CheckSight ("Watch") 
         CYBB K 1 A_Chase
         CYBB K 0 A_FaceTarget(5)
-        "####" "#" 0 A_ChangeVelocity(1,0,0,1)
+        "####" "#" 0 A_ChangeVelocity(1, 0, 0, 3)
 	"####" "#" 0 A_JumpIfInTargetLOS ("Watch", 160, JLOSF_DEADNOJUMP, 2048, 0)
 	"####" "#" 0 //A_CheckSight ("Watch") 
         CYBB L 1 A_Chase
         CYBB L 0 A_FaceTarget(5)
-        CYBB L 0 A_ChangeVelocity(1,0,0,1)
+        CYBB L 0 A_ChangeVelocity(1, 0, 0, 3)
 	"####" "#" 0 A_JumpIfInTargetLOS ("Watch", 160, JLOSF_DEADNOJUMP, 2048, 0)
 	"####" "#" 0 //A_CheckSight ("Watch") 
         CYBB M 1 A_Chase
         CYBB M 0 A_FaceTarget(5)
-        "####" "#" 0 A_ChangeVelocity(1,0,0,1)
+        "####" "#" 0 A_ChangeVelocity(1, 0, 0, 3)
 	"####" "#" 0 A_JumpIfInTargetLOS ("Watch", 160, JLOSF_DEADNOJUMP, 2048, 0)
 	"####" "#" 0 //A_CheckSight ("Watch") 
         CYBB N 1 A_Chase
         CYBB N 0 A_FaceTarget(5)
-        CYBB N 0 A_ChangeVelocity(1,0,0,1)
+        CYBB N 0 A_ChangeVelocity(1, 0, 0, 3)
 	"####" "#" 0 A_JumpIfInTargetLOS ("Watch", 160, JLOSF_DEADNOJUMP, 2048, 0)
 	"####" "#" 0 //A_CheckSight ("Watch") 
         CYBB O 1 A_Chase
         CYBB O 0 A_FaceTarget(5)
-        "####" "#" 0 A_ChangeVelocity(1,0,0,1)
+        "####" "#" 0 A_ChangeVelocity(1, 0, 0, 3)
 	"####" "#" 0 A_JumpIfInTargetLOS ("Watch", 160, JLOSF_DEADNOJUMP, 2048, 0)
 	"####" "#" 0 //A_CheckSight ("Watch") 
         CYBB P 1 A_Chase
         CYBB P 0 A_FaceTarget(5)
-        CYBB P 0 A_ChangeVelocity(1,0,0,1)
+        CYBB P 0 A_ChangeVelocity(1, 0, 0, 3)
 	"####" "#" 0 A_JumpIfInTargetLOS ("Watch", 160, JLOSF_DEADNOJUMP, 2048, 0)
 	"####" "#" 0 //A_CheckSight ("Watch") 
         CYBB Q 1 A_Chase
         CYBB Q 0 A_FaceTarget(5)
-        "####" "#" 0 A_ChangeVelocity(1,0,0,1) 
+        "####" "#" 0 A_ChangeVelocity(1, 0, 0, 3) 
 	"####" "#" 0 A_JumpIfInTargetLOS ("Watch", 160, JLOSF_DEADNOJUMP, 2048, 0)
 	"####" "#" 0 //A_CheckSight ("Watch") 
         CYBB R 1 A_Chase
         CYBB R 0 A_FaceTarget(5)
-        CYBB R 0 A_ChangeVelocity(1,0,0,1)
+        CYBB R 0 A_ChangeVelocity(1, 0, 0, 3)
 	"####" "#" 0 A_JumpIfInTargetLOS ("Watch", 160, JLOSF_DEADNOJUMP, 2048, 0)
 	"####" "#" 0 //A_CheckSight ("Watch") 
         CYBB S 1 A_Chase
         CYBB S 0 A_FaceTarget(5) 
-        "####" "#" 0 A_ChangeVelocity(1,0,0,1)
+        "####" "#" 0 A_ChangeVelocity(1, 0, 0, 3)
 	"####" "#" 0 A_JumpIfInTargetLOS ("Watch", 160, JLOSF_DEADNOJUMP, 2048, 0)
 	"####" "#" 0 //A_CheckSight ("Watch") 
         CYBB T 1 A_Chase
         CYBB T 0 A_FaceTarget(5)
-        CYBB T 0 A_ChangeVelocity(1,0,0,1)
+        CYBB T 0 A_ChangeVelocity(1, 0, 0, 3)
 	"####" "#" 0 A_JumpIfInTargetLOS ("Watch", 160, JLOSF_DEADNOJUMP, 2048, 0)
 	"####" "#" 0 //A_CheckSight ("Watch") 
         CYBB U 1 A_Chase
         CYBB U 0 A_FaceTarget(5)
-        "####" "#" 0 A_ChangeVelocity(1,0,0,1)
+        "####" "#" 0 A_ChangeVelocity(1, 0, 0, 3)
 	"####" "#" 0 A_JumpIfInTargetLOS ("Watch", 160, JLOSF_DEADNOJUMP, 2048, 0) 
 	"####" "#" 0 //A_CheckSight ("Watch") 
         CYBB V 1 A_Chase
         CYBB V 0 A_FaceTarget(5) 
-        CYBB V 0 A_ChangeVelocity(1,0,0,1)
+        CYBB V 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB Q 0 A_SetUserVar("user_chasing",user_chasing+1)
         CYBB Q 0 A_JumpIf(user_chasing==12,"ChasingEnd")
         "####" "#" 0 A_Jump(24,"LaughChasing")
@@ -1144,8 +1149,8 @@ ACTOR Foxy 10003 {
     Monster
     +SLIDESONWALLS
     +LOOKALLAROUND
-    +INVULNERABLE
-    +NODAMAGE
+    -INVULNERABLE
+    -NODAMAGE
     SeeSound ""
     PainSound ""
     DeathSound ""
@@ -1154,7 +1159,8 @@ ACTOR Foxy 10003 {
 
     States {
     Spawn:
-	CYBI B 0 ACS_EXECUTEALWAYS(59,0,2,0)
+        TNT1 A 0
+        CYBI B 0 ACS_EXECUTEALWAYS(59,0,2,0)
         CYBI B 350
         "####" "#" 0 A_Stop
         "####" "#" 0 A_Jump(255,"WakeUp")
@@ -1177,54 +1183,54 @@ ACTOR Foxy 10003 {
     Chasing:
         CYBB B 1 A_Chase
         //CYBB B 0 A_FaceTarget(5)
-        CYBB B 0 A_ChangeVelocity(1,0,0,1) 
+        CYBB B 0 A_ChangeVelocity(1, 0, 0, 3) 
         CYBB C 1 A_Chase
         //CYBB C 0 A_FaceTarget(5)
-        CYBB C 0 A_ChangeVelocity(1,0,0,1)
+        CYBB C 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB D 1 A_Chase
         "####" "#" 0 A_PlaySound("pstep",0,1.0)
         //CYBB D 0 A_FaceTarget(5)
-        CYBB D 0 A_ChangeVelocity(1,0,0,1)
+        CYBB D 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB E 1 A_Chase
         //CYBB E 0 A_FaceTarget(5)
-        CYBB E 0 A_ChangeVelocity(1,0,0,1)
+        CYBB E 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB F 1 A_Chase
         //CYBB F 0 A_FaceTarget(5)
-        CYBB F 0 A_ChangeVelocity(1,0,0,1)
+        CYBB F 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB G 1 A_Chase
         //CYBB G 0 A_FaceTarget(5)
-        CYBB G 0 A_ChangeVelocity(1,0,0,1)
+        CYBB G 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB H 1 A_Chase
         //CYBB H 0 A_FaceTarget(5)
-        CYBB H 0 A_ChangeVelocity(1,0,0,1)
+        CYBB H 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB I 1 A_Chase
         //CYBB I 0 A_FaceTarget(5)
-        CYBB I 0 A_ChangeVelocity(1,0,0,1)
+        CYBB I 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB J 1 A_Chase
         //CYBB J 0 A_FaceTarget(5)
-        CYBB J 0 A_ChangeVelocity(1,0,0,1)
+        CYBB J 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB K 1 A_Chase
         //CYBB K 0 A_FaceTarget(5)
-        CYBB K 0 A_ChangeVelocity(1,0,0,1)
+        CYBB K 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB L 1 A_Chase
         "####" "#" 0 A_PlaySound("pstep",0,1.0)
         //CYBB L 0 A_FaceTarget(5)
-        CYBB L 0 A_ChangeVelocity(1,0,0,1)
+        CYBB L 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB M 1 A_Chase
         //CYBB M 0 A_FaceTarget(5)
-        CYBB M 0 A_ChangeVelocity(1,0,0,1)
+        CYBB M 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB N 1 A_Chase
         //CYBB N 0 A_FaceTarget(5)
-        CYBB N 0 A_ChangeVelocity(1,0,0,1)
+        CYBB N 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB O 1 A_Chase
         //CYBB O 0 A_FaceTarget(5)
-        CYBB O 0 A_ChangeVelocity(1,0,0,1) 
+        CYBB O 0 A_ChangeVelocity(1, 0, 0, 3) 
         CYBB P 1 A_Chase
         //CYBB P 0 A_FaceTarget(5)
-        CYBB P 0 A_ChangeVelocity(1,0,0,1)
+        CYBB P 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB Q 1 A_Chase
         //CYBB Q 0 A_FaceTarget(5)
-        CYBB Q 0 A_ChangeVelocity(1,0,0,1)
+        CYBB Q 0 A_ChangeVelocity(1, 0, 0, 3)
         CYBB Q 0 A_SetUserVar("user_chasing",user_chasing+1)
         CYBB Q 0 A_JumpIf(user_chasing==35,"ChasingEnd")
 	Loop
@@ -1327,9 +1333,9 @@ ACTOR GoldenFreddy 10051 {
     MaxDropOffHeight 32
     CameraHeight 56
     Monster
-    +INVULNERABLE
+    -INVULNERABLE
     -SOLID
-    +NODAMAGE
+    -NODAMAGE
     SeeSound ""
     PainSound ""
     DeathSound ""

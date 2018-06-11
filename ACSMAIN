@@ -7,7 +7,7 @@ function str timeconverter(int tick) {
 	//	return 12;
 	//}
 	//return tmp;
-	return StrParam(i:tick/35/60, s:"AM");
+	return StrParam(i:tick/35/60, s:" AM");
 }
 
 script 800 ENTER {
@@ -17,8 +17,8 @@ script 800 ENTER {
 		delay(1);
 		if(time >= 126000) time = 0;
 		SetHudSize(640, 400, FALSE);
-		SetFont("smallfont");
-		HudMessage(s:timeconverter(time); HUDMSG_PLAIN, 1, CR_RED, 640.2, 0.1, 0.0);
+		SetFont("bigfont");
+		HudMessage(s:timeconverter(time); HUDMSG_PLAIN, 1, CR_GRAY, 642.2, 0.1, 0.0);
 		time++;
 	}
 }
