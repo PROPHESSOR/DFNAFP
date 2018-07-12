@@ -1167,25 +1167,53 @@ Actor Foxy 10003 {
 
     States {
     Spawn:
-        TNT1 A 0 A_GiveInventory("ActivateFoxy", 1)
-        TNT1 A 0 A_JumpIfInventory("ActivateFoxy", 1, "WakeUp")
-        TNT1 A 0 A_JumpIfInventory("ActivateFoxy", 1, "WakeUp", PlayerNumber())
-        TNT1 A 0 A_JumpIfInventory("ActivateFoxy", 1, "WakeUp", -1)
-        TNT1 A 0 A_JumpIfInventory("ActivateFoxy", 1, "WakeUp", 0)
+        TNT1 A 0 A_JumpIfInventory("Activated", 1, "WakeUp")
         TNT1 A 0 A_Stop
         // CYBI B 0 ACS_EXECUTEALWAYS(59,0,2,0)
         // CYBI B 350
-        // CYBI B 350 A_PlaySound("foxy/song", CHAN_5, random(0, 1))
+        CYBI B 350 A_PlaySound("foxy/song", CHAN_5, random(0, 1))
         CYBI B 2 A_Log("Foxy -> Spawn")
+        Loop
+    StandStill:
+        CYBI Z 5 A_LookEx(0, 0, 0, 0, 360, "See")
         Loop
     WakeUp:
         TNT1 A 0 A_Log("Foxy -> WakeUp")
+        // Goto Test
         "####" "#" 0 A_ClearTarget
         // "####" "#" 0 ACS_EXECUTEALWAYS(52, 0, 0, 0)
         CYBI BCDEFGHIJKLMNOPQRSTUVWXYZ 1
         CYBA ABCDEF 1
         TNT1 A 0 A_LookEx(0, 0, 0, 0, 360, "See")
         Goto See
+    Test:
+        CYBI A 55 A_Log("CYBI A")
+        CYBI B 55 A_Log("CYBI B")
+        CYBI C 55 A_Log("CYBI C")
+        CYBI D 55 A_Log("CYBI D")
+        CYBI E 55 A_Log("CYBI E")
+        CYBI F 55 A_Log("CYBI F")
+        CYBI G 55 A_Log("CYBI G")
+        CYBI H 55 A_Log("CYBI H")
+        CYBI I 55 A_Log("CYBI I")
+        CYBI J 55 A_Log("CYBI J")
+        CYBI K 55 A_Log("CYBI K")
+        CYBI L 55 A_Log("CYBI L")
+        CYBI M 55 A_Log("CYBI M")
+        CYBI N 55 A_Log("CYBI N")
+        CYBI O 55 A_Log("CYBI O")
+        CYBI P 55 A_Log("CYBI P")
+        CYBI Q 55 A_Log("CYBI Q")
+        CYBI R 55 A_Log("CYBI R")
+        CYBI S 55 A_Log("CYBI S")
+        CYBI T 55 A_Log("CYBI T")
+        CYBI U 55 A_Log("CYBI U")
+        CYBI V 55 A_Log("CYBI V")
+        CYBI W 55 A_Log("CYBI W")
+        CYBI X 55 A_Log("CYBI X")
+        CYBI Y 55 A_Log("CYBI Y")
+        CYBI Z 55 A_Log("CYBI Z")
+        Loop
     See:
         TNT1 A 0 A_Print("Foxy hunting") //ACS_EXECUTEALWAYS(50,0,0,0)
         Goto ChaseBegin
@@ -1195,77 +1223,78 @@ Actor Foxy 10003 {
         // TNT1 A 0 A_GiveInventory ("IsChasingFast", 1)
     ChasingStart:
         TNT1 A 0 A_SetUserVar("user_chasing",0)
+        CYBB B 0 A_PlaySound("foxy/scream", CHAN_5, 1.0, 1.0)
     Chasing:
         CYBB B 1 A_Chase
-        CYBB B 0 A_PlaySound("foxy/scream", CHAN_5)
         //CYBB B 0 A_FaceTarget(5)
-        CYBB B 0 A_ChangeVelocity(1, 0, 0, 3) 
+        CYBB B 0 A_ChangeVelocity(1, 0, 0, 5) 
         CYBB C 1 A_Chase
         //CYBB C 0 A_FaceTarget(5)
-        CYBB C 0 A_ChangeVelocity(1, 0, 0, 3)
+        CYBB C 0 A_ChangeVelocity(1, 0, 0, 5)
         CYBB D 1 A_Chase
-        "####" "#" 0 A_PlaySound("foxy/run", CHAN_6, 1.0)
+        "####" "#" 0 A_PlaySound("pstep", CHAN_6, 1.0)
         //CYBB D 0 A_FaceTarget(5)
-        CYBB D 0 A_ChangeVelocity(1, 0, 0, 3)
+        CYBB D 0 A_ChangeVelocity(1, 0, 0, 5)
         CYBB E 1 A_Chase
         //CYBB E 0 A_FaceTarget(5)
-        CYBB E 0 A_ChangeVelocity(1, 0, 0, 3)
+        CYBB E 0 A_ChangeVelocity(1, 0, 0, 5)
         CYBB F 1 A_Chase
         //CYBB F 0 A_FaceTarget(5)
-        CYBB F 0 A_ChangeVelocity(1, 0, 0, 3)
+        CYBB F 0 A_ChangeVelocity(1, 0, 0, 5)
         CYBB G 1 A_Chase
         //CYBB G 0 A_FaceTarget(5)
-        CYBB G 0 A_ChangeVelocity(1, 0, 0, 3)
+        CYBB G 0 A_ChangeVelocity(1, 0, 0, 5)
         CYBB H 1 A_Chase
         //CYBB H 0 A_FaceTarget(5)
-        CYBB H 0 A_ChangeVelocity(1, 0, 0, 3)
+        CYBB H 0 A_ChangeVelocity(1, 0, 0, 5)
         CYBB I 1 A_Chase
         //CYBB I 0 A_FaceTarget(5)
-        CYBB I 0 A_ChangeVelocity(1, 0, 0, 3)
+        CYBB I 0 A_ChangeVelocity(1, 0, 0, 5)
         CYBB J 1 A_Chase
         //CYBB J 0 A_FaceTarget(5)
-        CYBB J 0 A_ChangeVelocity(1, 0, 0, 3)
+        CYBB J 0 A_ChangeVelocity(1, 0, 0, 5)
         CYBB K 1 A_Chase
         //CYBB K 0 A_FaceTarget(5)
-        CYBB K 0 A_ChangeVelocity(1, 0, 0, 3)
+        CYBB K 0 A_ChangeVelocity(1, 0, 0, 5)
         CYBB L 1 A_Chase
-        "####" "#" 0 A_PlaySound("pstep",0,1.0)
+        "####" "#" 0 A_PlaySound("pstep", CHAN_6, 1.0)
         //CYBB L 0 A_FaceTarget(5)
-        CYBB L 0 A_ChangeVelocity(1, 0, 0, 3)
+        CYBB L 0 A_ChangeVelocity(1, 0, 0, 5)
         CYBB M 1 A_Chase
         //CYBB M 0 A_FaceTarget(5)
-        CYBB M 0 A_ChangeVelocity(1, 0, 0, 3)
+        CYBB M 0 A_ChangeVelocity(1, 0, 0, 5)
         CYBB N 1 A_Chase
         //CYBB N 0 A_FaceTarget(5)
-        CYBB N 0 A_ChangeVelocity(1, 0, 0, 3)
+        CYBB N 0 A_ChangeVelocity(1, 0, 0, 5)
         CYBB O 1 A_Chase
         //CYBB O 0 A_FaceTarget(5)
-        CYBB O 0 A_ChangeVelocity(1, 0, 0, 3) 
+        CYBB O 0 A_ChangeVelocity(1, 0, 0, 5) 
         CYBB P 1 A_Chase
         //CYBB P 0 A_FaceTarget(5)
-        CYBB P 0 A_ChangeVelocity(1, 0, 0, 3)
+        CYBB P 0 A_ChangeVelocity(1, 0, 0, 5)
         CYBB Q 1 A_Chase
         //CYBB Q 0 A_FaceTarget(5)
-        CYBB Q 0 A_StopSound(CHAN_5)
-        CYBB Q 0 A_StopSound(CHAN_6)
-        CYBB Q 0 A_ChangeVelocity(1, 0, 0, 3)
+        CYBB Q 0 A_ChangeVelocity(1, 0, 0, 5)
         CYBB Q 0 A_SetUserVar("user_chasing",user_chasing+1)
         CYBB Q 0 A_JumpIf(user_chasing==35,"ChasingEnd")
         Loop
     ChasingEnd:
+        CYBB Q 0 A_StopSound(CHAN_5)
+        CYBB Q 0 A_StopSound(CHAN_6)
         CYBB Q 0 A_JumpIfTargetInLOS ("ChasingStart", 270, JLOSF_DEADNOJUMP, 2048, 0)
         CYBB Q 0 A_JumpIfInTargetLOS ("ChasingStart", 45, JLOSF_DEADNOJUMP, 2048, 0)
         Goto LoseTarget
     LoseTarget:
         TNT1 A 0 A_ClearTarget
         TNT1 A 0 A_TakeInventory ("IsChasingFast", 999)
-        TNT1 A 0 ACS_EXECUTEALWAYS(59,0,1,0) Goto Spawn
+        TNT1 A 0 ACS_EXECUTEALWAYS(59,0,1,0)
+        Goto StandStill
     Melee:
         TNT1 A 0 A_TakeInventory ("IsChasingFast", 999)
         CYBI B 0 ACS_EXECUTEALWAYS(101,0,0,0)
         CYBI B 140 A_FaceTarget
         TNT1 A 0 ACS_EXECUTEALWAYS(59,0,0,0)
-        Goto Spawn
+        Goto StandStill
     Pain:
         TROO H 2
         TROO H 2 A_Pain

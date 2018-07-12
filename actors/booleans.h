@@ -1,3 +1,3 @@
-Actor ActivateFoxy : Inventory {
+Actor Activated : Inventory {
     Inventory.MaxAmount 1
 }
